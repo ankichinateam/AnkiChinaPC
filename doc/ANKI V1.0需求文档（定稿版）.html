@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://shimo.im/docs/9avKycHKHm8ZSON9/read -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no">
+        <meta name="theme-color" content="#000000">
+        <meta name="version" content="1.4.6">
+        <link rel="shortcut icon" href="https://assets-cdn.shimo.im/from_qbox/doc_favicon.ico">
+        <meta name="description" content="石墨文档是一款轻便、简洁的在线协作文档工具，PC端和移动端全覆盖，支持多人同时对文档编辑和评论，让你与他人轻松完成协作撰稿、方案讨论、会议记录和资料共享等工作。">
+        <meta name="keywords" content="在线协作文档,在线文档编辑,在线协作编辑,协同编辑,多人编辑,团队协作工具,文档管理工具,文档协作,文件存储,文件共享,协作办公,SAAS,云协作,google docs,在线office">
+        <meta name="google" content="notranslate">
+        <style type="text/css" data-styled-components="cEcoPi bNCcSM" data-styled-components-is-local="true">/* sc-component-id: sc-bdVaJa */
+
+.cEcoPi{clear:both;width:816px;margin:0 auto;padding-top:25px;padding-bottom:25px;text-align:center;width:100%;}
+/* sc-component-id: sc-bwzfXH */
+
+.bNCcSM{font-size:12px;color:#a5a5a5;-webkit-font-smoothing:antialiased;}
+</style><style type="text/css" data-styled-components="" data-styled-components-is-local="false">/* sc-component-id: sc-global-1274816861 */
+#ToastsContainer_ShimoUI .Toastify__toast-container{width:100%;text-align:center;height:0;padding:0;margin:0;margin-top:30px;right:0;}#ToastsContainer_ShimoUI .Toastify__toast{box-shadow:none;background:none;cursor:auto;overflow:visible;margin:0;padding:0;display:inline;}#ToastsContainer_ShimoUI .Toastify__toast:after{content:'\a';white-space:pre;}#ToastsContainer_ShimoUI .Toastify__toast-body{display:inline;}#ToastsContainer_ShimoUI .Toast_mask{position:fixed;top:0;left:0;right:0;bottom:0;width:100%;background:transparent;z-index:999999;}
+</style><style type="text/css" data-styled-components="sfCUt inYJrZ" data-styled-components-is-local="true">/* sc-component-id: sc-1n784rm-0 */
+
+.sfCUt{box-sizing:border-box;display:inline-block;border-radius:2px;border-width:1px;border-style:solid;background-color:#fff;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:pointer;-webkit-transition:opacity 0.3s,border-color 0.3s;transition:opacity 0.3s,border-color 0.3s;color:#666;border-width:0;background-image:linear-gradient(#fdfdfd,#f8f8f8);box-shadow:0 1px 1px 0 rgba(0,0,0,0.11);position:relative;font-size:12px;font-weight:bold;line-height:1.4;min-width:90px;height:30px;line-height:28px;padding:0 15px;}.sfCUt:focus{outline:none;}.sfCUt:active{opacity:0.9;}.sfCUt:hover{background-image:none;}.sfCUt::before{content:'';display:block;position:absolute;top:-1px;left:-1px;z-index:-1;width:100%;height:100%;border:1px solid rgba(65,70,75,0.05);border-radius:2px;-webkit-transition:opacity 0.3s ease-out;transition:opacity 0.3s ease-out;opacity:0;}.sfCUt:hover{border-radius:1px;}.sfCUt:hover::before{opacity:1;}.sfCUt[disabled]{border-radius:1px;}.sfCUt[disabled]::before{opacity:1;}.sfCUt:hover{background-image:linear-gradient(#fdfdfd,#f8f8f8);}.sfCUt:active{box-shadow:0 1px 1px 0 rgba(0,0,0,0.1);background-image:linear-gradient(#f0f0f0,#f7f7f7);}.sfCUt[disabled]{color:#ccc;background-color:#f7f7f7;}.sfCUt[disabled]::before{border-color:rgba(0,0,0,0.05);}.sfCUt[disabled]{cursor:not-allowed;background-image:none;}
+
+.inYJrZ{box-sizing:border-box;display:inline-block;border-radius:2px;border-width:1px;border-style:solid;background-color:#fff;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:pointer;-webkit-transition:opacity 0.3s,border-color 0.3s;transition:opacity 0.3s,border-color 0.3s;color:#666;border-width:0;background-image:linear-gradient(#fdfdfd,#f8f8f8);box-shadow:0 1px 1px 0 rgba(0,0,0,0.11);position:relative;font-size:14px;font-weight:bold;line-height:1.4;min-width:100px;height:34px;line-height:32px;padding:0 15px;}.inYJrZ:focus{outline:none;}.inYJrZ:active{opacity:0.9;}.inYJrZ:hover{background-image:none;}.inYJrZ::before{content:'';display:block;position:absolute;top:-1px;left:-1px;z-index:-1;width:100%;height:100%;border:1px solid rgba(65,70,75,0.05);border-radius:2px;-webkit-transition:opacity 0.3s ease-out;transition:opacity 0.3s ease-out;opacity:0;}.inYJrZ:hover{border-radius:1px;}.inYJrZ:hover::before{opacity:1;}.inYJrZ[disabled]{border-radius:1px;}.inYJrZ[disabled]::before{opacity:1;}.inYJrZ:hover{background-image:linear-gradient(#fdfdfd,#f8f8f8);}.inYJrZ:active{box-shadow:0 1px 1px 0 rgba(0,0,0,0.1);background-image:linear-gradient(#f0f0f0,#f7f7f7);}.inYJrZ[disabled]{color:#ccc;background-color:#f7f7f7;}.inYJrZ[disabled]::before{border-color:rgba(0,0,0,0.05);}.inYJrZ[disabled]{cursor:not-allowed;background-image:none;}
+</style><style type="text/css" data-styled-components="" data-styled-components-is-local="false">/* sc-component-id: sc-global-1193784920 */
+.randomClass-dhpOWU.sm-dropdown{position:absolute;left:-9999px;top:-9999px;display:block;z-index:1050;}.randomClass-dhpOWU.sm-dropdown .sm-dropdown-menu{box-shadow:0 2px 8px 0 rgba(0,0,0,0.15);}.randomClass-dhpOWU.sm-dropdown-tip::before{content:'';position:absolute;z-index:-1;display:block;width:10px;height:10px;background-color:#fff;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);box-shadow:0 0 6px 0 rgba(0,0,0,0.15);}.randomClass-dhpOWU.sm-dropdown-tip::after{content:'';display:block;position:absolute;border-color:transparent;border-width:6px;border-style:solid;}.randomClass-dhpOWU.sm-dropdown-tip.sm-dropdown-placement-bottomLeft::before{left:20px;top:-4px;}.randomClass-dhpOWU.sm-dropdown-tip.sm-dropdown-placement-bottomLeft::after{left:19px;top:-12px;border-bottom-color:#fff;}.randomClass-dhpOWU.sm-dropdown-tip.sm-dropdown-placement-bottomRight::before{right:20px;top:-4px;}.randomClass-dhpOWU.sm-dropdown-tip.sm-dropdown-placement-bottomRight::after{right:19px;top:-12px;border-bottom-color:#fff;}.randomClass-dhpOWU.sm-dropdown-tip.sm-dropdown-placement-bottomCenter::before{left:50%;top:-4px;margin-left:-6px;}.randomClass-dhpOWU.sm-dropdown-tip.sm-dropdown-placement-bottomCenter::after{left:50%;top:-12px;margin-left:-6px;border-bottom-color:#fff;}.randomClass-dhpOWU.sm-dropdown-tip.sm-dropdown-placement-topLeft::before{left:20px;bottom:-4px;}.randomClass-dhpOWU.sm-dropdown-tip.sm-dropdown-placement-topLeft::after{left:19px;bottom:-12px;border-top-color:#fff;}.randomClass-dhpOWU.sm-dropdown-tip.sm-dropdown-placement-topRight::before{right:20px;bottom:-4px;}.randomClass-dhpOWU.sm-dropdown-tip.sm-dropdown-placement-topRight::after{right:19px;bottom:-12px;border-top-color:#fff;}.randomClass-dhpOWU.sm-dropdown-tip.sm-dropdown-placement-topCenter::before{left:50%;bottom:-4px;margin-left:-6px;}.randomClass-dhpOWU.sm-dropdown-tip.sm-dropdown-placement-topCenter::after{left:50%;bottom:-12px;margin-left:-6px;border-top-color:#fff;}.randomClass-dhpOWU.sm-dropdown-hidden{display:none;}.randomClass-dhpOWU.sm-dropdown-mask{z-index:1050;position:absolute;top:0;bottom:0;left:0;right:0;}.randomClass-dhpOWU.sm-dropdown-mask-hidden{display:none;}
+</style><style type="text/css" data-styled-components="" data-styled-components-is-local="true"></style><style type="text/css" data-styled-components="" data-styled-components-is-local="false">/* sc-component-id: sc-global-2145721762 */
+.randomClass-mvIob{display:block;position:absolute;font-size:12px;-webkit-font-smoothing:auto;line-height:1.375;opacity:1;z-index:1060;}.randomClass-mvIob .sm-tooltip-inner{color:#fff;text-align:center;padding:6px 10px;background:#41464b;border-radius:2px;box-shadow:0 1px 3px 0 rgba(0,0,0,0.1);height:auto;line-height:1.375;white-space:normal;}.randomClass-mvIob.sm-tooltip-hidden{display:none;}.randomClass-mvIob .sm-tooltip-arrow{position:absolute;width:0;height:0;border-color:#41464b;border-style:solid;}.randomClass-mvIob .sm-tooltip-arrow::after{content:'';position:absolute;width:5px;height:5px;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);box-shadow:0 0 8px 0 rgba(0,0,0,0.4);z-index:-1;}.randomClass-mvIob.sm-tooltip-theme-blue .sm-tooltip-inner{background:#8ab3e9;}.randomClass-mvIob.sm-tooltip-theme-blue .sm-tooltip-inner{background:#8ab3e9;}.randomClass-mvIob.sm-tooltip-theme-blue .sm-tooltip-arrow{border-color:#8ab3e9;}.randomClass-mvIob.sm-tooltip-theme-white{opacity:1;}.randomClass-mvIob.sm-tooltip-theme-white .sm-tooltip-inner{color:#333;background:#fff;}.randomClass-mvIob.sm-tooltip-theme-white .sm-tooltip-inner{background:#fff;box-shadow:0 2px 8px 0 rgba(0,0,0,0.2);}.randomClass-mvIob.sm-tooltip-theme-white .sm-tooltip-arrow{border-color:#fff;}.randomClass-mvIob.sm-tooltip-theme-white .sm-tooltip-arrow::after{box-shadow:0 0 6px 0 rgba(0,0,0,0.2);}.randomClass-mvIob.sm-tooltip-placement-top,.randomClass-mvIob.sm-tooltip-placement-topLeft,.randomClass-mvIob.sm-tooltip-placement-topRight{padding-bottom:7px;}.randomClass-mvIob.sm-tooltip-placement-top .sm-tooltip-arrow,.randomClass-mvIob.sm-tooltip-placement-topLeft .sm-tooltip-arrow,.randomClass-mvIob.sm-tooltip-placement-topRight .sm-tooltip-arrow{bottom:3px;border-width:4px 4px 0;border-bottom-color:transparent;border-left-color:transparent;border-right-color:transparent;}.randomClass-mvIob.sm-tooltip-placement-top .sm-tooltip-arrow::after,.randomClass-mvIob.sm-tooltip-placement-topLeft .sm-tooltip-arrow::after,.randomClass-mvIob.sm-tooltip-placement-topRight .sm-tooltip-arrow::after{left:-2.5px;top:-6.5px;}.randomClass-mvIob.sm-tooltip-placement-bottom,.randomClass-mvIob.sm-tooltip-placement-bottomLeft,.randomClass-mvIob.sm-tooltip-placement-bottomRight{padding-top:7px;}.randomClass-mvIob.sm-tooltip-placement-bottom .sm-tooltip-arrow,.randomClass-mvIob.sm-tooltip-placement-bottomLeft .sm-tooltip-arrow,.randomClass-mvIob.sm-tooltip-placement-bottomRight .sm-tooltip-arrow{top:3px;border-width:0 4px 4px;border-top-color:transparent;border-left-color:transparent;border-right-color:transparent;}.randomClass-mvIob.sm-tooltip-placement-bottom .sm-tooltip-arrow::after,.randomClass-mvIob.sm-tooltip-placement-bottomLeft .sm-tooltip-arrow::after,.randomClass-mvIob.sm-tooltip-placement-bottomRight .sm-tooltip-arrow::after{left:-2.5px;top:1.5px;box-shadow:0 0 10px 0 rgba(0,0,0,0.2);}.randomClass-mvIob.sm-tooltip-placement-left,.randomClass-mvIob.sm-tooltip-placement-leftTop,.randomClass-mvIob.sm-tooltip-placement-leftBottom{padding-right:7px;}.randomClass-mvIob.sm-tooltip-placement-left .sm-tooltip-arrow,.randomClass-mvIob.sm-tooltip-placement-leftTop .sm-tooltip-arrow,.randomClass-mvIob.sm-tooltip-placement-leftBottom .sm-tooltip-arrow{right:3px;border-width:4px 0 4px 4px;border-top-color:transparent;border-bottom-color:transparent;border-right-color:transparent;}.randomClass-mvIob.sm-tooltip-placement-left .sm-tooltip-arrow::after,.randomClass-mvIob.sm-tooltip-placement-leftTop .sm-tooltip-arrow::after,.randomClass-mvIob.sm-tooltip-placement-leftBottom .sm-tooltip-arrow::after{left:-6.5px;top:-2.5px;}.randomClass-mvIob.sm-tooltip-placement-right,.randomClass-mvIob.sm-tooltip-placement-rightTop,.randomClass-mvIob.sm-tooltip-placement-rightBottom{padding-left:7px;}.randomClass-mvIob.sm-tooltip-placement-right .sm-tooltip-arrow,.randomClass-mvIob.sm-tooltip-placement-rightTop .sm-tooltip-arrow,.randomClass-mvIob.sm-tooltip-placement-rightBottom .sm-tooltip-arrow{left:3px;border-width:4px 4px 4px 0;border-top-color:transparent;border-left-color:transparent;border-bottom-color:transparent;}.randomClass-mvIob.sm-tooltip-placement-right .sm-tooltip-arrow::after,.randomClass-mvIob.sm-tooltip-placement-rightTop .sm-tooltip-arrow::after,.randomClass-mvIob.sm-tooltip-placement-rightBottom .sm-tooltip-arrow::after{left:1.5px;top:-2.5px;}.randomClass-mvIob.sm-tooltip-placement-top .sm-tooltip-arrow,.randomClass-mvIob.sm-tooltip-placement-bottom .sm-tooltip-arrow{left:50%;margin-left:-4px;}.randomClass-mvIob.sm-tooltip-placement-topLeft .sm-tooltip-arrow,.randomClass-mvIob.sm-tooltip-placement-bottomLeft .sm-tooltip-arrow{left:16px;}.randomClass-mvIob.sm-tooltip-placement-topRight .sm-tooltip-arrow,.randomClass-mvIob.sm-tooltip-placement-bottomRight .sm-tooltip-arrow{right:16px;}.randomClass-mvIob.sm-tooltip-placement-left .sm-tooltip-arrow,.randomClass-mvIob.sm-tooltip-placement-right .sm-tooltip-arrow{top:50%;margin-top:-4px;}.randomClass-mvIob.sm-tooltip-placement-leftTop .sm-tooltip-arrow,.randomClass-mvIob.sm-tooltip-placement-rightTop .sm-tooltip-arrow{top:8px;}.randomClass-mvIob.sm-tooltip-placement-leftBottom .sm-tooltip-arrow,.randomClass-mvIob.sm-tooltip-placement-rightBottom .sm-tooltip-arrow{bottom:8px;}
+/* sc-component-id: sc-global-3280337108 */
+.sm-tooltip.no-touch{pointer-events:none !important;}.sm-tooltip{pointer-events:auto !important;}.sm-tooltip *{pointer-events:auto !important;}
+</style><style type="text/css" data-styled-components="dfnjic gclHxb ecwZWa jglOwE hOByXO fweXFV" data-styled-components-is-local="true">/* sc-component-id: sc-hMqMXs */
+
+.hOByXO{position:relative;width:38px;min-width:38px;height:28px;margin:11px 15px 11px 0;}.hOByXO path{fill:rgba(65,70,75,0.3);}
+/* sc-component-id: sc-kEYyzF */
+
+.fweXFV{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);}
+/* sc-component-id: sc-iAyFgw */
+
+.jglOwE{pointer-events:none;height:20px;line-height:24px;margin-left:20px;box-shadow:none;background:inherit;max-width:656px;padding-bottom:4px;font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+/* sc-component-id: sc-cvbbAY */
+
+.ecwZWa{display:block;height:18px;margin:16px 0;}.ecwZWa > path{fill:#41464b;}
+/* sc-component-id: sc-jWBwVP */
+
+.gclHxb{float:left;-webkit-text-decoration:none;text-decoration:none;}
+/* sc-component-id: sc-brqgnP */
+
+.dfnjic{margin-left:20px;}
+</style><style type="text/css" data-styled-components="" data-styled-components-is-local="false">/* sc-component-id: sc-global-4201804011 */
+.randomClass-keafdv{position:fixed;overflow:auto;top:0;right:0;bottom:0;left:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;z-index:999;-webkit-overflow-scrolling:touch;outline:0;}.sm-modal-mask-hidden{display:none;}
+</style><style type="text/css" data-styled-components="bBZnOa oKQLn iIrSPJ iUOdyu fPpNdM jIkhor" data-styled-components-is-local="true">/* sc-component-id: sc-frDJqD */
+
+.jIkhor{position:relative;width:38px;min-width:38px;height:28px;margin:11px 18px 11px 0px;}.jIkhor svg{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);}
+/* sc-component-id: sc-keyframes-bBZnOa */
+@-webkit-keyframes bBZnOa{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);}50%{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg);}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}@keyframes bBZnOa{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);}50%{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg);}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}
+/* sc-component-id: sc-jwKygS */
+
+.fPpNdM{position:relative;width:72px;height:28px;box-sizing:border-box;margin-top:11px;text-align:center;font-size:14px;font-family:serif;font-weight:bold;border-radius:2px;cursor:pointer;}.fPpNdM.register{background:linear-gradient(180deg,#41464b 0%,#2c3033 100%);color:white;margin-right:10px;border:0;}.fPpNdM.login{background:linear-gradient(180deg,#ffffff 0%,#fafafa 98.11%);border:1px solid rgba(65,70,75,0.5);color:rgba(65,70,75,0.9);}.fPpNdM:hover{opacity:0.9;}
+/* sc-component-id: sc-btzYZH */
+
+.oKQLn{position:relative;width:8px;height:30px;padding:0;margin:10px 0 10px 15px;cursor:pointer;background-color:#fff;border:none;}.oKQLn svg{position:absolute;top:calc(50% - 1px);left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);}
+/* sc-component-id: sc-lhVmIH */
+
+.iUOdyu{vertical-align:bottom;margin-right:5px;}
+/* sc-component-id: sc-bYSBpT */
+
+.iIrSPJ{position:relative;height:12px;line-height:12px;margin:19px 0 19px 20px;font-size:12px;color:#a5a5a5;}
+</style><style type="text/css" data-styled-components="" data-styled-components-is-local="false">/* sc-component-id: sc-global-3361459923 */
+.header-download-app .sm-modal-close{top:12px;right:12px;}
+</style><style type="text/css" data-styled-components="jSvVys eeuNgQ bNQfKY" data-styled-components-is-local="true">/* sc-component-id: sc-GMQeP */
+
+.jSvVys{white-space:nowrap;width:100%;position:relative;background:linear-gradient(180deg,#fdfdfd,#fff);z-index:110;height:50px;box-shadow:0 2px 3px 0 rgba(100,100,100,0.15);-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;min-width:1280px;overflow:hidden;border-bottom:1px solid #fff;}.jSvVys::after{clear:both;content:'';display:table;}
+/* sc-component-id: sc-exAgwC */
+
+.eeuNgQ{position:relative;float:left;padding-left:0px;}.eeuNgQ > a,.eeuNgQ > div,.eeuNgQ > button{display:inline-block;vertical-align:middle;}
+/* sc-component-id: sc-cQFLBn */
+
+.bNQfKY{position:relative;float:right;}.bNQfKY > a,.bNQfKY > div,.bNQfKY > button,.bNQfKY > span{float:left;vertical-align:middle;margin-right:10px;}
+</style><style type="text/css" data-styled-components="" data-styled-components-is-local="false">/* sc-component-id: sc-global-2858897182 */
+html{line-height:1.15;-webkit-text-size-adjust:100%;}body{margin:0;}main{display:block;}h1{font-size:2em;margin:0.67em 0;}hr{box-sizing:content-box;height:0;overflow:visible;}pre{font-family:monospace,monospace;font-size:1em;}a{background-color:transparent;}abbr[title]{border-bottom:none;-webkit-text-decoration:underline;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}b,strong{font-weight:bolder;}code,kbd,samp{font-family:monospace,monospace;font-size:1em;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sub{bottom:-0.25em;}sup{top:-0.5em;}img{border-style:none;}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0;}button,input{overflow:visible;}button,select{text-transform:none;}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0;}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText;}fieldset{padding:0.35em 0.75em 0.625em;}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal;}progress{vertical-align:baseline;}textarea{overflow:auto;}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0;}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto;}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px;}[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit;}details{display:block;}summary{display:list-item;}template{display:none;}[hidden]{display:none;}body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",Helvetica,Tahoma,Arial,"Microsoft YaHei",微软雅黑,黑体,Heiti,sans-serif,SimSun,宋体,serif;background-color:#F7F7F7;}*{margin:0;padding:0;outline:none;}button,input,optgroup,select,textarea{font-family:inherit;}.hide{display:none;}@media screen and (-webkit-min-device-pixel-ratio:2),screen and (min-resolution:2dppx){body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}}
+</style>
+<link href="./ANKI V1.0需求文档（定稿版）_files/doc-910afa6aa8.css" rel="stylesheet">
+        <title>ANKI V1.0需求文档（定稿版）</title>
+    <link rel="stylesheet" type="text/css" href="./ANKI V1.0需求文档（定稿版）_files/vendors_toc-b668a6ecd0.css"><script charset="utf-8" src="./ANKI V1.0需求文档（定稿版）_files/chunk-vendors_toc-6abc11d51b.js.下载"></script><link rel="stylesheet" type="text/css" href="./ANKI V1.0需求文档（定稿版）_files/toc-4d2e49760e.css"><script charset="utf-8" src="./ANKI V1.0需求文档（定稿版）_files/chunk-toc-4eec781b00.js.下载"></script><style type="text/css" data-styled-components="" data-styled-components-is-local="true"></style><style type="text/css">.Toastify__toast-container {
+  z-index: 9999;
+  position: fixed;
+  padding: 4px;
+  width: 320px;
+  box-sizing: border-box;
+  color: #fff; }
+  .Toastify__toast-container--top-left {
+    top: 1em;
+    left: 1em; }
+  .Toastify__toast-container--top-center {
+    top: 1em;
+    left: 50%;
+    margin-left: -160px; }
+  .Toastify__toast-container--top-right {
+    top: 1em;
+    right: 1em; }
+  .Toastify__toast-container--bottom-left {
+    bottom: 1em;
+    left: 1em; }
+  .Toastify__toast-container--bottom-center {
+    bottom: 1em;
+    left: 50%;
+    margin-left: -160px; }
+  .Toastify__toast-container--bottom-right {
+    bottom: 1em;
+    right: 1em; }
+
+@media only screen and (max-width: 480px) {
+  .Toastify__toast-container {
+    width: 100vw;
+    padding: 0;
+    left: 0;
+    margin: 0; }
+    .Toastify__toast-container--top-left, .Toastify__toast-container--top-center, .Toastify__toast-container--top-right {
+      top: 0; }
+    .Toastify__toast-container--bottom-left, .Toastify__toast-container--bottom-center, .Toastify__toast-container--bottom-right {
+      bottom: 0; }
+    .Toastify__toast-container--rtl {
+      right: 0;
+      left: initial; } }
+
+.Toastify__toast {
+  position: relative;
+  min-height: 64px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  padding: 8px;
+  border-radius: 1px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 15px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  max-height: 800px;
+  overflow: hidden;
+  font-family: sans-serif;
+  cursor: pointer;
+  direction: ltr; }
+  .Toastify__toast--rtl {
+    direction: rtl; }
+  .Toastify__toast--default {
+    background: #fff;
+    color: #aaa; }
+  .Toastify__toast--info {
+    background: #3498db; }
+  .Toastify__toast--success {
+    background: #07bc0c; }
+  .Toastify__toast--warning {
+    background: #f1c40f; }
+  .Toastify__toast--error {
+    background: #e74c3c; }
+  .Toastify__toast-body {
+    margin: auto 0;
+    flex: 1; }
+
+@media only screen and (max-width: 480px) {
+  .Toastify__toast {
+    margin-bottom: 0; } }
+
+.Toastify__close-button {
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s ease;
+  align-self: flex-start; }
+  .Toastify__close-button--default {
+    color: #000;
+    opacity: 0.3; }
+  .Toastify__close-button:hover, .Toastify__close-button:focus {
+    opacity: 1; }
+
+@-webkit-keyframes Toastify__trackProgress {
+  0% {
+    width: 100%; }
+  100% {
+    width: 0; } }
+
+@keyframes Toastify__trackProgress {
+  0% {
+    width: 100%; }
+  100% {
+    width: 0; } }
+
+.Toastify__progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 5px;
+  z-index: 9999;
+  opacity: 0.7;
+  -webkit-animation: Toastify__trackProgress linear 1;
+          animation: Toastify__trackProgress linear 1;
+  background-color: rgba(255, 255, 255, 0.7); }
+  .Toastify__progress-bar--rtl {
+    right: 0;
+    left: initial; }
+  .Toastify__progress-bar--default {
+    background: linear-gradient(to right, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55); }
+
+@-webkit-keyframes Toastify__bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+            transform: translate3d(3000px, 0, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+            transform: translate3d(-25px, 0, 0); }
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+            transform: translate3d(10px, 0, 0); }
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+            transform: translate3d(-5px, 0, 0); }
+  to {
+    -webkit-transform: none;
+            transform: none; } }
+
+@keyframes Toastify__bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+            transform: translate3d(3000px, 0, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+            transform: translate3d(-25px, 0, 0); }
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+            transform: translate3d(10px, 0, 0); }
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+            transform: translate3d(-5px, 0, 0); }
+  to {
+    -webkit-transform: none;
+            transform: none; } }
+
+@-webkit-keyframes Toastify__bounceOutRight {
+  20% {
+    opacity: 1;
+    -webkit-transform: translate3d(-20px, 0, 0);
+            transform: translate3d(-20px, 0, 0); }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+            transform: translate3d(2000px, 0, 0); } }
+
+@keyframes Toastify__bounceOutRight {
+  20% {
+    opacity: 1;
+    -webkit-transform: translate3d(-20px, 0, 0);
+            transform: translate3d(-20px, 0, 0); }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+            transform: translate3d(2000px, 0, 0); } }
+
+@-webkit-keyframes Toastify__bounceInLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+            transform: translate3d(-3000px, 0, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+            transform: translate3d(25px, 0, 0); }
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+            transform: translate3d(-10px, 0, 0); }
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+            transform: translate3d(5px, 0, 0); }
+  to {
+    -webkit-transform: none;
+            transform: none; } }
+
+@keyframes Toastify__bounceInLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+            transform: translate3d(-3000px, 0, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+            transform: translate3d(25px, 0, 0); }
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+            transform: translate3d(-10px, 0, 0); }
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+            transform: translate3d(5px, 0, 0); }
+  to {
+    -webkit-transform: none;
+            transform: none; } }
+
+@-webkit-keyframes Toastify__bounceOutLeft {
+  20% {
+    opacity: 1;
+    -webkit-transform: translate3d(20px, 0, 0);
+            transform: translate3d(20px, 0, 0); }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+            transform: translate3d(-2000px, 0, 0); } }
+
+@keyframes Toastify__bounceOutLeft {
+  20% {
+    opacity: 1;
+    -webkit-transform: translate3d(20px, 0, 0);
+            transform: translate3d(20px, 0, 0); }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+            transform: translate3d(-2000px, 0, 0); } }
+
+@-webkit-keyframes Toastify__bounceInUp {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+            transform: translate3d(0, 3000px, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0); }
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+            transform: translate3d(0, 10px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+            transform: translate3d(0, -5px, 0); }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@keyframes Toastify__bounceInUp {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+            transform: translate3d(0, 3000px, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0); }
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+            transform: translate3d(0, 10px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+            transform: translate3d(0, -5px, 0); }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@-webkit-keyframes Toastify__bounceOutUp {
+  20% {
+    -webkit-transform: translate3d(0, -10px, 0);
+            transform: translate3d(0, -10px, 0); }
+  40%,
+  45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 20px, 0);
+            transform: translate3d(0, 20px, 0); }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+            transform: translate3d(0, -2000px, 0); } }
+
+@keyframes Toastify__bounceOutUp {
+  20% {
+    -webkit-transform: translate3d(0, -10px, 0);
+            transform: translate3d(0, -10px, 0); }
+  40%,
+  45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 20px, 0);
+            transform: translate3d(0, 20px, 0); }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+            transform: translate3d(0, -2000px, 0); } }
+
+@-webkit-keyframes Toastify__bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+            transform: translate3d(0, -3000px, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+            transform: translate3d(0, 25px, 0); }
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+            transform: translate3d(0, -10px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+            transform: translate3d(0, 5px, 0); }
+  to {
+    -webkit-transform: none;
+            transform: none; } }
+
+@keyframes Toastify__bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+            transform: translate3d(0, -3000px, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+            transform: translate3d(0, 25px, 0); }
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+            transform: translate3d(0, -10px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+            transform: translate3d(0, 5px, 0); }
+  to {
+    -webkit-transform: none;
+            transform: none; } }
+
+@-webkit-keyframes Toastify__bounceOutDown {
+  20% {
+    -webkit-transform: translate3d(0, 10px, 0);
+            transform: translate3d(0, 10px, 0); }
+  40%,
+  45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0); }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+            transform: translate3d(0, 2000px, 0); } }
+
+@keyframes Toastify__bounceOutDown {
+  20% {
+    -webkit-transform: translate3d(0, 10px, 0);
+            transform: translate3d(0, 10px, 0); }
+  40%,
+  45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0); }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+            transform: translate3d(0, 2000px, 0); } }
+
+.Toastify__bounce-enter--top-left, .Toastify__bounce-enter--bottom-left {
+  -webkit-animation-name: Toastify__bounceInLeft;
+          animation-name: Toastify__bounceInLeft; }
+
+.Toastify__bounce-enter--top-right, .Toastify__bounce-enter--bottom-right {
+  -webkit-animation-name: Toastify__bounceInRight;
+          animation-name: Toastify__bounceInRight; }
+
+.Toastify__bounce-enter--top-center {
+  -webkit-animation-name: Toastify__bounceInDown;
+          animation-name: Toastify__bounceInDown; }
+
+.Toastify__bounce-enter--bottom-center {
+  -webkit-animation-name: Toastify__bounceInUp;
+          animation-name: Toastify__bounceInUp; }
+
+.Toastify__bounce-exit--top-left, .Toastify__bounce-exit--bottom-left {
+  -webkit-animation-name: Toastify__bounceOutLeft;
+          animation-name: Toastify__bounceOutLeft; }
+
+.Toastify__bounce-exit--top-right, .Toastify__bounce-exit--bottom-right {
+  -webkit-animation-name: Toastify__bounceOutRight;
+          animation-name: Toastify__bounceOutRight; }
+
+.Toastify__bounce-exit--top-center {
+  -webkit-animation-name: Toastify__bounceOutUp;
+          animation-name: Toastify__bounceOutUp; }
+
+.Toastify__bounce-exit--bottom-center {
+  -webkit-animation-name: Toastify__bounceOutDown;
+          animation-name: Toastify__bounceOutDown; }
+
+@-webkit-keyframes Toastify__zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+
+@keyframes Toastify__zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+
+@-webkit-keyframes Toastify__zoomOut {
+  from {
+    opacity: 1; }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3); }
+  to {
+    opacity: 0; } }
+
+@keyframes Toastify__zoomOut {
+  from {
+    opacity: 1; }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3); }
+  to {
+    opacity: 0; } }
+
+.Toastify__zoom-enter {
+  -webkit-animation-name: Toastify__zoomIn;
+          animation-name: Toastify__zoomIn; }
+
+.Toastify__zoom-exit {
+  -webkit-animation-name: Toastify__zoomOut;
+          animation-name: Toastify__zoomOut; }
+
+@-webkit-keyframes Toastify__flipIn {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0; }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in; }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1; }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
+  to {
+    -webkit-transform: perspective(400px);
+            transform: perspective(400px); } }
+
+@keyframes Toastify__flipIn {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0; }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in; }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1; }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
+  to {
+    -webkit-transform: perspective(400px);
+            transform: perspective(400px); } }
+
+@-webkit-keyframes Toastify__flipOut {
+  from {
+    -webkit-transform: perspective(400px);
+            transform: perspective(400px); }
+  30% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1; }
+  to {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0; } }
+
+@keyframes Toastify__flipOut {
+  from {
+    -webkit-transform: perspective(400px);
+            transform: perspective(400px); }
+  30% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1; }
+  to {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0; } }
+
+.Toastify__flip-enter {
+  -webkit-animation-name: Toastify__flipIn;
+          animation-name: Toastify__flipIn; }
+
+.Toastify__flip-exit {
+  -webkit-animation-name: Toastify__flipOut;
+          animation-name: Toastify__flipOut; }
+
+@-webkit-keyframes Toastify__slideInRight {
+  from {
+    -webkit-transform: translate3d(110%, 0, 0);
+            transform: translate3d(110%, 0, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@keyframes Toastify__slideInRight {
+  from {
+    -webkit-transform: translate3d(110%, 0, 0);
+            transform: translate3d(110%, 0, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@-webkit-keyframes Toastify__slideInLeft {
+  from {
+    -webkit-transform: translate3d(-110%, 0, 0);
+            transform: translate3d(-110%, 0, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@keyframes Toastify__slideInLeft {
+  from {
+    -webkit-transform: translate3d(-110%, 0, 0);
+            transform: translate3d(-110%, 0, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@-webkit-keyframes Toastify__slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 110%, 0);
+            transform: translate3d(0, 110%, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@keyframes Toastify__slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 110%, 0);
+            transform: translate3d(0, 110%, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@-webkit-keyframes Toastify__slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -110%, 0);
+            transform: translate3d(0, -110%, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@keyframes Toastify__slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -110%, 0);
+            transform: translate3d(0, -110%, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@-webkit-keyframes Toastify__slideOutRight {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(110%, 0, 0);
+            transform: translate3d(110%, 0, 0); } }
+
+@keyframes Toastify__slideOutRight {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(110%, 0, 0);
+            transform: translate3d(110%, 0, 0); } }
+
+@-webkit-keyframes Toastify__slideOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(-110%, 0, 0);
+            transform: translate3d(-110%, 0, 0); } }
+
+@keyframes Toastify__slideOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(-110%, 0, 0);
+            transform: translate3d(-110%, 0, 0); } }
+
+@-webkit-keyframes Toastify__slideOutUp {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 110%, 0);
+            transform: translate3d(0, 110%, 0); } }
+
+@keyframes Toastify__slideOutUp {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 110%, 0);
+            transform: translate3d(0, 110%, 0); } }
+
+@-webkit-keyframes Toastify__slideOutDown {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -110%, 0);
+            transform: translate3d(0, -110%, 0); } }
+
+@keyframes Toastify__slideOutDown {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -110%, 0);
+            transform: translate3d(0, -110%, 0); } }
+
+.Toastify__slide-enter--top-left, .Toastify__slide-enter--bottom-left {
+  -webkit-animation-name: Toastify__slideInLeft;
+          animation-name: Toastify__slideInLeft; }
+
+.Toastify__slide-enter--top-right, .Toastify__slide-enter--bottom-right {
+  -webkit-animation-name: Toastify__slideInRight;
+          animation-name: Toastify__slideInRight; }
+
+.Toastify__slide-enter--top-center {
+  -webkit-animation-name: Toastify__slideInDown;
+          animation-name: Toastify__slideInDown; }
+
+.Toastify__slide-enter--bottom-center {
+  -webkit-animation-name: Toastify__slideInUp;
+          animation-name: Toastify__slideInUp; }
+
+.Toastify__slide-exit--top-left, .Toastify__slide-exit--bottom-left {
+  -webkit-animation-name: Toastify__slideOutLeft;
+          animation-name: Toastify__slideOutLeft; }
+
+.Toastify__slide-exit--top-right, .Toastify__slide-exit--bottom-right {
+  -webkit-animation-name: Toastify__slideOutRight;
+          animation-name: Toastify__slideOutRight; }
+
+.Toastify__slide-exit--top-center {
+  -webkit-animation-name: Toastify__slideOutUp;
+          animation-name: Toastify__slideOutUp; }
+
+.Toastify__slide-exit--bottom-center {
+  -webkit-animation-name: Toastify__slideOutDown;
+          animation-name: Toastify__slideOutDown; }</style><style type="text/css" data-styled-components="" data-styled-components-is-local="true"></style><style type="text/css" data-styled-components="jYPXQu gbnxbo" data-styled-components-is-local="true">
+/* sc-component-id: sc-iELTvK */
+
+.jYPXQu{white-space:nowrap;}
+/* sc-component-id: sc-cmTdod */
+
+.gbnxbo{display:inline-block;font-size:12px;margin-left:10px;color:white;cursor:pointer;}.gbnxbo::before{content:'✕';}</style><style type="text/css" data-styled-components="cdnwZQ" data-styled-components-is-local="true">
+/* sc-component-id: sc-daURTG */
+
+.cdnwZQ{width:100%;height:100%;position:absolute;z-index:999;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.cdnwZQ .iframe-wrapper{position:absolute;z-index:999;width:480px;height:544px;}.cdnwZQ .iframe-wrapper iframe{border-radius:2px;border:0;width:100%;height:100%;}.cdnwZQ .iframe-wrapper span{position:absolute;width:12px;height:12px;top:23px;right:28px;z-index:999;cursor:pointer;}.cdnwZQ .iframe-wrapper span path{fill:#c2c2c2;}.cdnwZQ .background{width:100%;height:100%;position:absolute;background:rgba(65,70,75,0.5);}</style><style id="sm-ad-style-container">
+  .sm-ad-wrapper {
+    display: none;
+  }
+  .sm-ad-container {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+  }
+  .sm-ad-container a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0.3;
+    }
+    to {
+      opacity: 1;
+     }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+     }
+    to {
+      opacity: 0;
+     }
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0.3;
+    }
+    to {
+      opacity: 1;
+     }
+  }
+
+  @keyframes cardEaseIn {
+    from {
+      opacity: 0.3;
+      top: 50px;
+    }
+    to {
+      opacity: 1;
+      top: 0;
+     }
+  }
+  @-webkit-keyframes cardEaseIn {
+    from {
+      opacity: 0.3;
+      top: 50px;
+    }
+    to {
+      opacity: 1;
+      top: 0;
+     }
+  }
+
+  .sm-ad-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+  }
+  .sm-ad-img {
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    height: 100%;
+  }
+  .ad-price {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 10px;
+    line-height: 1em;
+    padding: 4px 12px;
+    color: white;
+    background-color: rgba(216, 216, 216);
+    background-color: rgba(216, 216, 216, 0.3);
+    border-top-left-radius: 2px;
+  }
+  .ad-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    padding: 3px 7px;
+    background-color: rgba(216, 216, 216, 0.3);
+    color: white;
+    font-size: 14px;
+    border-radius: 50%;
+  }
+  .ad-close:before {
+    content: "X";
+  }
+  .ad-price:before {
+    content: "广告";
+  }
+  .sm-ad-item:hover > .ad-price {
+    background-color: rgba(216, 216, 216);
+    background-color: rgba(216, 216, 216, 0.5);
+  }
+  .sm-ad-item:hover > .ad-price:before  {
+    content: "升级至无广告版本";
+  }
+  .sm-ad-mask {
+    display: none;
+    background-color: rgba(44, 48, 51, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .sm-ad-mask button {
+    width: 120px;
+    height: 35px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 30px 0px rgba(0,0,0,0.3);
+    color: #ffffff;
+    font-size: 15px;
+    transform: translate(0%, 50%);
+  }
+  .sm-ad-ever-close {
+    background-color: #E1AE6C;
+    margin-right: 8px;
+    border: none;
+  }
+  .sm-ad-temporal-close {
+    border: 1px solid #FFF;
+    background-color: rgba(0,0,0,0.1);
+  }
+
+  .sm-ad-card {
+    width: 100%;
+    position: relative;
+    margin: 10px 0;
+  }
+  .sm-ad-card a {
+    text-decoration: none;
+  }
+  .sm-ad-card .sm-ad-carousel__switcher {
+    display: none;
+  }
+  .sm-ad-card:hover .sm-ad-carousel__switcher {
+    display: block;
+  }
+  .sm-ad-card__close {
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    color: #cdcdcd;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-weight: lighter;
+    cursor: pointer;
+  }
+  .sm-ad-card__close:before {
+    content: "+";
+    font-size: 20px
+  }
+  .sm-ad-card__image-wrapper {
+    position: relative;
+    height: 100%;
+  }
+  .sm-ad-card__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .sm-ad-card__label {
+    color: white;
+    width: 45px;
+    height: 22px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    transform: scale(0.5);
+    transform-origin: top left;
+    position: absolute;
+    left: 3px;
+    top: 2px;
+    text-align: center;
+  }
+  .sm-ad-card__label--dark {
+    text-shadow: unset;
+    background-color: black;
+    transform-origin: bottom right;
+    right: 0;
+    bottom: 0;
+    left: unset;
+    top: unset;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.85);
+    cursor: pointer;
+  }
+  .sm-ad-card__label.sm-ad-card__label--bottom-right,
+  .sm-ad-card__label.sm-ad-card__label--top-right {
+    width: auto;
+    position: absolute;
+    border: solid 1px #41464b;
+    color: #41464b;
+    padding: 4px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    text-shadow: none;
+    bottom: 7px;
+    left: initial;
+    top: initial;
+    right: 10px;
+    transform-origin: bottom right;
+  }
+  .sm-ad-card__label.sm-ad-card__label--top-right {
+    bottom: initial;
+    top: 10px;
+    transform-origin: top right;
+  }
+  .sm-ad-carousel__switcher {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 46%;
+    cursor: pointer;
+  }
+  .sm-ad-carousel__switcher > svg {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+  }
+  .sm-ad-carousel__switcher-right > svg {
+    transform: rotateY(180deg);
+  }
+  .sm-ad-carousel__switcher-left {
+    left: 3px;
+  }
+  .sm-ad-carousel__switcher-right {
+    right: 3px;
+  }
+
+  .sm-ad-text-link a {
+    text-decoration: none;
+  }
+  .sm-ad-text-link p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .sm-ad-shortcut {
+    width: 217px;
+    height: 30px;
+    background-color: #efefef;
+    left: -10px;
+    cursor: pointer
+  }
+  .sm-ad-shortcut .sm-ad-card__label {
+    width: 48px;
+    height: 28px;
+    line-height: 28px;
+    right: unset;
+    bottom: unset;
+    top: -5px;
+    left: -17px;
+  }
+  .sm-ad-shortcut p {
+    padding-left: 45px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #7f7f7f;
+    padding-top: 6px;
+    width: 160px;
+  }
+  .sm-ad-shortcut .sm-ad-card__close {
+    width: 20px;
+    height: 20px;
+    color: #a5a5a5;
+    display: none;
+    top: 4px;
+    right: -1px;
+    font-weight: 200;
+  }
+  .sm-ad-shortcut:hover .sm-ad-card__close {
+    display: block;
+  }
+  .sm-ad-shortcut .sm-ad-card__close:before {
+    font-size: 24px;
+  }
+
+  .sm-ad-mobile-link {
+    width: 100%;
+    height: 16px;
+    margin: 15px 0 20px;
+  }
+  .sm-ad-mobile-link .sm-ad-card__label {
+    width: 60px;
+    left: -30px;
+    font-size: 16px;
+  }
+  .sm-ad-mobile-link p {
+    padding-left: 40px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1;
+    color: #41464b;
+    width: calc(100% - 40px);
+    text-align: left;
+  }
+
+  .sm-ad-mobile-card {
+    height: 48vw;
+    margin: 15px 0;
+  }
+
+  .sm-ad-mobile-top-banner {
+    transition: height 1s ease 0s;
+    height: 88px;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    z-index: 999;
+  }
+
+  .sm-ad-mobile-top-banner .sm-ad-card__label--bottom-right {
+    bottom: 0;
+    right: 0;
+    background-color: #000000;
+    border: 0;
+    color: white;
+  }
+
+  .sm-ad-mobile-top-banner .sm-ad-card__label--top-left {
+    left: 5px;
+    top: 5px;
+  }
+
+  .sm-ad-mobile-top-banner .sm-ad-card__close {
+    right: 0px;
+    top: 0px;
+  }
+
+  .sm-ad-mobile-card__button {
+    width: 120px !important;
+    height: 36px !important;
+    min-width: auto;
+    position: absolute;
+    bottom: 16px;
+    left: calc(50% - 60px);
+  }
+
+  .sm-ad-mobile-stream-a {
+    text-decoration:none;
+  }
+  .sm-ad-mobile-pic-container .sm-ad-card__close,
+  .sm-ad-mobile-mixed-container .sm-ad-card__close {
+    width: 14px;
+    height: 14px;
+    top: 14px;
+    right: 14px;
+  }
+  .sm-ad-mobile-pic-container .sm-ad-card__close:before,
+  .sm-ad-mobile-mixed-container .sm-ad-card__close:before {
+    font-size: 24px;
+    line-height: 10px;
+  }
+  .tencent-ad.sm-ad-mobile-stream-card__label {
+    bottom: 0;
+    left: 0;
+  }
+  .sm-ad-mobile-pic-container .sm-ad-mobile-stream-card__label,
+  .sm-ad-mobile-mixed-container .sm-ad-mobile-stream-card__label {
+    height: 18px;
+    line-height: 18px;
+    padding: 0 6px;
+    top: 15px;
+    left: 15px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+  }
+  .sm-ad-mobile-pic-container .sm-ad-mobile-stream-card__upgrade,
+  .sm-ad-mobile-mixed-container .sm-ad-mobile-stream-card__upgrade,
+  .tencent-ad.sm-ad-mobile-stream-card__upgrade {
+    bottom: 0;
+    right: 0;
+  }
+  .sm-ad-mobile-mixed-container .sm-ad-mobile-stream-card__label,
+  .sm-ad-mobile-mixed-container .sm-ad-mobile-stream-card__upgrade {
+    z-index: 1;
+  }
+  .sm-ad-mobile-stream-card__label, .sm-ad-mobile-stream-card__upgrade {
+    position: absolute;
+    color: #41464b;
+    font-size: .7em;
+    padding: 10px;
+    line-height: 10px;
+  }
+  .sm-ad-mobile-stream-card__label {
+    text-align: left;
+  }
+  .sm-ad-mobile-stream-card__upgrade {
+    padding: 3px 6px;
+    margin: 6px 10px;
+    border: 1px solid #41464b;
+    border-radius: 2px;
+  }
+  .sm-ad-mobile-mixed-container {
+    position: relative;
+    left: 0px;
+    padding: 10px 10px 30px 10px !important;
+    background-color: #f8f8f8;
+  }
+  .sm-ad-mobile-mixed-a {
+    position: relative;
+    float: left;
+    display: flex;
+    width: 100%;
+  }
+  .sm-ad-mobile-mixed-image {
+    position: relative;
+    float: left;
+    flex: none;
+  }
+  .sm-ad-mobile-mixed-content {
+    color: #000;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+  }
+  .sm-ad-mobile-mixed-text {
+    flex: auto;
+    margin: 12px 9.5px 0 14.5px;
+    overflow: hidden;
+    font-size: 1em;
+  }
+  .sm-ad-mobile-mixed-price {
+    flex: auto;
+    margin-left: 14px;
+    letter-spacing: 1.7px;
+    overflow: hidden;
+    width: calc(100% - 28px);
+    font-size: 1em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .sm-ad-mobile-mixed-brandText {
+    margin-left: 5px;
+    letter-spacing: 1.6px;
+    color: #676b6f;
+  }
+  .sm-ad-mobile-mixed-button {
+    margin: 0 0 10.5px 14px;
+    width: fit-content;
+    max-width: 300px;
+    background-color: #41464b;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    font-size: .86em;
+    padding: .3em 1.2em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  .sm-ad-mobile-pic-container {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 10px 10px 30px 10px !important;
+    background-color: #f8f8f8;
+  }
+  .sm-ad-mobile-pic {
+    width: 100%;
+  }
+
+  .sm-ad-bottom-card__wrapper {
+    position: relative;
+    top: -18px;
+    left: -4px;
+  }
+  .sm-ad-bottom-card__wrapper--animation {
+    animation: cardEaseIn 1s ease-in-out;
+    -webkit-animation: cardEaseIn 1s ease-in-out;
+  }
+  .sm-ad-bottom-card {
+    width: 182px;
+    height: 182px;
+    position: relative;
+    background-size: cover;
+    cursor: pointer;
+  }
+  .sm-ad-bottom-card p {
+    font-size: 11px;
+    color: white;
+  }
+  .sm-ad-bottom-card .sm-ad-card__close {
+    top: -8px;
+    right: -2px;
+    color: white;
+  }
+  .sm-ad-bottom-card .sm-ad-card__close:before {
+    font-size: 30px;
+  }
+  .sm-ad-bottom-card__apron {
+    box-sizing: border-box;
+    width: 100%;
+    height: 44px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0 15px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .sm-ad-bottom-card__text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    top: -7px;
+    line-height: 1.1;
+  }
+  .sm-ad-bottom-card__text p {
+    margin: 0;
+  }
+
+  .sm-ad-banner {
+    height: 50px;
+    max-width: 712px;
+  }
+  .sm-ad-banner .sm-ad-card__close {
+    color: #ccc;
+    top: -7px;
+  }
+  .sm-ad-banner::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent;
+  }
+  .sm-ad-banner__image {
+    width: 712px;
+    height: 50px;
+    display: block;
+  }
+
+  .sm-ad-container.tencent-ad-container .sm-ad-item,
+  .sm-ad-container.with-padding-background .sm-ad-item {
+    padding: 10px 10px 30px;
+    background: #eee;
+  }
+
+  .sm-ad-container.with-padding-background .sm-ad-item {
+    box-sizing: border-box;
+  }
+
+  .sm-ad-container.with-padding-background.sm-ad-mobile-card .sm-ad-item {
+    padding-bottom: 10px;
+  }
+
+  .sm-ad-mobile-link .sm-ad-card__label--bordered {
+    left: 0;
+    top: 0;
+    width: auto;
+    border: solid 1px #41464b;
+    color: #41464b;
+    padding: 4px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    text-shadow: none;
+  }
+  </style><script charset="utf-8" src="./ANKI V1.0需求文档（定稿版）_files/chunk-vendors_gallery-fd5004e0d3.js.下载"></script></head>
+    <body class="">
+        <div id="file-page-header"><div id="ToastsContainer_ShimoUI"><div class="Toastify"></div></div><div class="sc-GMQeP jSvVys"><div class="sc-exAgwC eeuNgQ"><div class="sc-brqgnP dfnjic"><a class="sc-jWBwVP gclHxb" href="https://shimo.im/desktop"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 25" class="sc-cvbbAY ecwZWa"><path d="M24.9 2.9L23.1.8l-1.7 1.5H2l1 1.2c.1.1.2.1.3.1.2 0 3.3-.1 7.2-.1C8.3 9 5.8 14.1.2 18.6c-.1 0-.1.1-.1.2s.1.2.2.2h.1c5-3.2 7.8-6.8 8.1-7.3v12.8c0 .2.3.3.4.3.9-1.1 1.5-2.1 1.6-3.3 1 0 5.5 0 8-.1.3.3.5.3.7 1.3 0 .2.1.2.3.2h.1c1.7-1 1.9-1.9 1.9-5v-5.6c0-.1 0-.1.1-.2l.5-1.1c.1-.1.1-.2 0-.3l-1.9-1.1c-.1-.1-.3 0-.3.1l-.5 1.1c0 .1-.1.1-.2.1h-8.3l-1.2-.5c1.4-1.8 2-2.9 2.8-4.3.1-.2.1-.3.2-.3.2-.1.2-.3.1-.5l-.1-.1c-.7-.5-1.3-1-1.7-1.7 2.9-.1 13.8-.2 13.8-.2.1 0 .2-.1.1-.4zm-14.3 8.6l.3-.2h8.2c.1 0 .3.1.3.3v7.2c0 .5-.1 1.2-.6 1.7l-.2.1h-8v-9.1zm25.8 1.6c1.4.6 2.4 1.3 2.9 1.7s.5.8 0 1.4c-.1.2-.2.3-.6.6-.6.4-1 .3-1.2-.4-.3-1.6-.8-2.7-1.4-3.3.1.1.1 0 .3 0zm5.8 0c1.5.6 2.4 1.2 3 1.6.5.4.5.8.1 1.4-.1.2-.2.3-.6.7-.6.4-1 .3-1.2-.3-.4-1.6-.9-2.7-1.5-3.2 0-.1.1-.2.2-.2zm-8.5-.1l.1-.1c.1 0 .1 0 .1.1 0 0-.2 2.9-.5 3.5-.2.6-.6.8-1.3.6-.3-.1-1-.4-1-.4-.5-.3-.4-.8 0-1.1 1.5-.9 2.2-1.6 2.6-2.6zm19 9.5v.1c0 .1 0 .1-.1.1H30.3s-.1 0-.2-.1l-.7-.6h10.9v-2.3c-4.1 0-8.1.1-8.3.1 0 0-.1 0-.2-.1l-.7-.7h9.2v-3.6l2.1.5c.1 0 .1.1 0 .2l-.2.3V19h6.1l1.2-1.2 1.5 1.6v.1s0 .1-.1.1h-.1s-4.3 0-8.8.1V22h7l1.5-1.6 2.2 2.1zm-2.1-8.2c.6.3.7.7.3 1.5-.1.2-.1.4-.5.8-.5.5-1 .5-1.3-.1-.7-1.6-1.4-2.7-2.1-3.1-.1-.1 0-.2.1-.2 1.7.3 2.8.7 3.5 1.1zm1.3-1.7l.1.1c0 .1-.1.1-.1.1h-.1c-20.6-.1-20.6 0-20.8 0 0 0-.1 0-.2-.1l-.7-.7 10.2.1v-1.9h-7s-.1 0-.2-.1l-.7-.7 7.9.1V7.7h-6.5c-.4.4-1.1 1-1.4 1.2l-.1.1c-.1 0-.2-.1-.2-.2V1.7l2 .6h14.3l.6-1 1.1.6.7.3c.1 0 .1.1 0 .2l-.4.8v4.1l.1.2c.1.1-.1.3-.2.3h-7.9v1.8h5.1l1.1-1.1 1.5 1.5v.1s0 .1-.1.1h-7.7v1.9h7l1.2-1.1 1.4 1.6zm-9.7-9.8v4.3h1.5c.9-1.3 1.2-2.2 1.6-3.8 0-.1 0-.2.1-.2 0 0 .1 0 .1.1l1.3 1.2c.1.1.2.2 0 .4-.6 1.2-2.5 2.1-3.1 2.3h4.4V2.8h-5.9zm-2 4.3V2.8h-6.3v4.3h6.3zm-1.8-2.5c.4.3.4.7 0 1.3-.1.2-.2.3-.5.6-.5.4-.9.2-1.1-.3-.3-1.5-.7-2.5-1.3-3 0-.1 0-.2.1-.1 1.5.5 2.3 1.1 2.8 1.5zM67 4.5C66.3 2.4 65.6 1 64.7.4c-.1-.1 0-.3.2-.2 2 .6 3.1 1.5 3.9 2 .7.4.7 1 .2 1.9-.1.2-.3.5-.5.7-.6.7-1.2.5-1.5-.3zm11.8 16c.1 0 .2.1.2.3 0 .1-.1.2-.2.2s-.4.1-.6.1c-.8.1-2 .4-2.5 1.6l-.1.1-.1.1h-.2c-2-.9-6.5-3-8.1-4.7l-.1-.1c-2.4 2.2-5.4 3.6-10.6 5h-.1c-.1 0-.2-.1-.2-.2s.1-.2.1-.2c4.4-1.8 7.4-3.8 9.5-6-2.2-2.8-3-5.5-4-10h-4.4c-.1 0-.2 0-.3-.1l-.8-.9h18.8l1.5-1.6L78.3 6c.1.2 0 .3-.2.3 0 0-3.3.1-6.7.2.5.3 1.1.5 1.7.6 0 0 .1 0 .1.1.2.1.1.4-.1.4-.1 0-.4.2-.4.4-.7 2.7-2.3 6.4-4.2 8.5l-.2.2c3.2 2.1 6.6 2.9 10.5 3.8zm-16.1-14c1.2 4 2.7 6.8 4.5 8.7 1.9-2.6 2.9-5.5 3.6-8.8-2.4.1-4.8.1-5.9.1h-2.2zm42.9-3.2c.2.1.1.3-.1.4-.1 0-.3.2-.4.4-1.4 1.7-2.7 3.3-4.8 4.9h-.1c-.1 0-.2-.1-.2-.2s.1-.1.1-.2c1.6-2.7 2.2-4 3-6.4 0-.1.1-.2.2-.2s.2.1.2.1l.1.1c.6.3 1.4.8 2 1.1zM94 7.6c-.1-2.1-1.1-4.7-1.7-5.4 0-.1.1-.2.2-.2 1.6 1.3 2.3 2 3 2.6 1.1 1.1 1 2.5.4 3.2-.2.2-.2.3-.4.4-.9.6-1.4.3-1.5-.6zm-1.4 5.8c-.1.2-.3.3-.4.5-.5.5-1 .3-1.3-.3-.4-1.6-.9-2.6-1.5-3.2v9.8c-.1 1.3-.4 2.3-1.4 3.5-.2.1-.5 0-.5-.3V11.2c-.8 2.5-2.7 4.9-4.6 7 0 .1-.1.1-.1.1-.1.1-.2 0-.3-.1-.1-.1 0-.2 0-.3 3.1-4.4 4-7.9 4.7-11.1h-3.3s-.1 0-.2-.1L83 6l4.2.1h.3v-6l2.1.6c.1.1.1.1 0 .2l-.3.3v4.9h1L91.5 5l1.6 1.5.1.1c0 .1-.1.1-.1.1h-3.7v2.8c1.6.6 2.6 1.4 3.1 2 .4.6.6 1.2.1 1.9zm12.6-3.9c.1.1.1.2 0 .3l-.6 1.1c0 .1-.1.1-.1.2v6.2c0 3.4.1 4.5-1.8 5.7h-.1c-.2 0-.3 0-.3-.2-.3-1.1-.4-1.1-.8-1.4-2.8.1-8 .1-9.1.1l-.6-.8h9.8l.2-.1c.5-.6.7-1.3.7-1.9V16s-.1-.1-.2-.1h-9.4l-.6-.7h10v-4.6c0-.2-.1-.3-.3-.3h-9.4l-.6-.7h5.1V.1l2.2.6c.1.1.1.1 0 .2l-.4.3v8.3h3c.1 0 .2-.1.2-.1l.5-1c.1-.1.3-.2.4-.1l2.2 1.2z" fill="#a5a5a5"></path></svg></a></div><div class="sc-iAyFgw jglOwE">ANKI V1.0需求文档（定稿版）</div><button class="sc-btzYZH oKQLn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20px" height="20px"><path d="M13.5 16.9V4.5h-7v12.4l3.5-3.5 3.5 3.5z" fill="none" stroke="#a5a5a5"></path></svg></button><div class="sc-bYSBpT iIrSPJ"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" class="sc-lhVmIH iUOdyu" width="12px" height="12px"><path d="M7 13c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm0-1c2.8 0 5-2.2 5-5S9.8 2 7 2 2 4.2 2 7s2.2 5 5 5zm2.2-8l.8.4L6.1 10 4 7l.7-.6L6.1 8l3.1-4z" fill="#7a9880"></path></svg>今天 11:21 更新</div></div><div class="sc-cQFLBn bNQfKY"><span style="display:inline-block;cursor:not-allowed" class="file-demo-screen-btn"><button class="sm-button sc-hMqMXs hOByXO sc-1n784rm-0 sfCUt" type="primary" disabled="" style="pointer-events:none"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sc-kEYyzF fweXFV" width="20px" height="20px"><path d="M10 17c-3.9 0-7-3.1-7-7s3.1-7 7-7 7 3.1 7 7-3.1 7-7 7zm0-1c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6zm-1.5-3.5v-5l4 2.4-4 2.6z" fill="#555"></path></svg></button></span><button class="register sc-jwKygS fPpNdM">注册</button><button class="login sc-jwKygS fPpNdM">登录</button><button class="sm-button sc-frDJqD jIkhor sc-1n784rm-0 inYJrZ" type="default"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="18px" height="18px"><path d="M18 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm0 9c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm0 9c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2z" fill="#41464b"></path></svg></button></div></div><div style="position: absolute; top: 0px; left: 0px; width: 100%;"><div><div class="sm-tooltip  randomClass-mvIob  sm-tooltip-theme-blue sm-tooltip-placement-bottom " style="z-index: 998; left: 1262.09px; top: 39px;"><div class="sm-tooltip-content"><div class="sm-tooltip-arrow"></div><div class="sm-tooltip-inner"><span class="sc-iELTvK jYPXQu">开启更多功能，提升办公效能<span class="sc-cmTdod gbnxbo"></span></span></div></div></div></div></div></div>
+        <div id="app-container" class="sm-docs-container external-readonly">
+            <div id="editor-scroller" class="editor-scroller">
+                <div id="editor" class="ql-container ql-disabled ql-snow ">
+                    <div class="ql-title"><div class="ql-title-box" data-value="ANKI V1.0需求文档（定稿版）"><input data-value="ANKI V1.0需求文档（定稿版）" readonly="true" class="mousetrap" id="ql-title-input" autocomplete="off" autocorrect="off" spellcheck="false" value="ANKI V1.0需求文档（定稿版）"></div></div>
+                    <div class="ql-editor"><p class="ql-heading-title" line="JiVA"><br></p><p class="ql-heading-title" line="xOq0">原型地址</p><p line="scvQ"><a class="ql-link" href="https://org.modao.cc/app/7b029ed21f65dd23e20129fa7253249931030aac?simulator_type=device&amp;sticky" target="_blank" rel="noopener noreferrer nofollow">https://org.modao.cc/app/7b029ed21f65dd23e20129fa7253249931030aac?simulator_type=device&amp;sticky</a></p><p line="9gnx">密码：2011</p><p class="ql-heading-title" line="72Z7">MAC&amp;Windows版</p><h1 line="OB6z"><div data-header="1"><strong>整体说明：</strong><span style="color: #ff0000;">基于ANKI 2.1.15开发，</span>输出MAC版安装文件、Windows的64位和32位两个安装文件</div></h1><h2 line="LjG5"><div data-header="2">GitHub主页：<a class="ql-link" href="https://github.com/ankitects" target="_blank" rel="noopener noreferrer nofollow">https://github.com/ankitects</a></div></h2><ul data-list-style="circle"><li line="h5Uj" class="bullet-item">电脑源码地址：<a class="ql-link" href="https://github.com/ankitects/anki/releases/tag/2.1.15" target="_blank" rel="noopener noreferrer nofollow">https://github.com/ankitects/anki/releases/tag/2.1.15</a>　</li></ul><ul data-list-style="circle"><li line="zbx8" class="bullet-item">软件手册：<a class="ql-link" href="https://docs.ankiweb.net/" target="_blank" rel="noopener noreferrer nofollow">https://docs.ankiweb.net/</a></li></ul><ul data-list-style="circle"><li line="9Qlm" class="bullet-item">附件手册：<a class="ql-link" href="https://addon-docs.ankiweb.net/" target="_blank" rel="noopener noreferrer nofollow">https://addon-docs.ankiweb.net/</a> （可能有帮助）</li></ul><p line="Cpv7" class="ql-text-indent-1"><br></p><h1 line="onvl"><div data-header="1">一、手机验证码登录 </div></h1><ol data-list-style="decimal"><li line="UcJT" data-list-number="1" data-list-content="1." class="ordered-item">需求说明：将ANKI的账号登录改成手机号登录和注册</li></ol><ol data-list-style="decimal"><li line="oSfK" data-list-number="2" data-list-content="2." class="ordered-item">注册时标记平台：MAC/Windows/安卓/IOS/网页</li></ol><ol data-list-style="decimal"><li line="6COK" data-list-number="3" data-list-content="3." class="ordered-item">情况①用户安装后首次打开ANKI时出发登录弹窗，用户点击关闭后不再主动触发。情况②用户在打开支付或操作同步功能时，自动打开登录弹窗。</li></ol><ol data-list-style="decimal"><li line="i54H" data-list-number="4" data-list-content="4." class="ordered-item">手机号输入：仅限11位的数字输入</li></ol><ol data-list-style="decimal"><li line="rPlb" data-list-number="5" data-list-content="5." class="ordered-item">验证码：支持字母和数字输入，点击“获取验证码”后文案改成“重新获取验证码+120S倒计时”</li></ol><ol data-list-style="decimal"><li line="o8gd" data-list-number="6" data-list-content="6." class="ordered-item">登录按钮：输入验证码后登录按钮高亮可点击</li></ol><ol data-list-style="decimal"><li line="Dqec" data-list-number="7" data-list-content="7." class="ordered-item">MAC上的偏好配置-&gt;授权账号，此处会显示登录的账号，点击接触授权照样可退出手机号登录</li></ol><ol data-list-style="decimal"><li line="MiJM" data-list-number="8" data-list-content="8." class="ordered-item">错误toast提示：</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="Zjpf" data-list-number="1" data-list-content="a.">toast逻辑：由后端触发，文案也由后端提供，2秒后自动消失</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="NTzp" data-list-number="2" data-list-content="b.">错误情况</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-2" line="ExWc" data-list-number="1" data-list-content="i.">手机号错误：请输入正确的手机号（无此手机号时）</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-2" line="jaTr" data-list-number="2" data-list-content="ii.">验证码错误：验证码错误</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-2" line="c8PL" data-list-number="3" data-list-content="iii.">网络异常：无网络，请检查网络后重试</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="UnIW" data-list-number="3" data-list-content="c.">退出登录：在原解决授权处，显示当前登录的账号信息，点击解除授权，完成退出登录</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="c1KK" data-list-number="4" data-list-content="d."><br></li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="xIcF" data-list-number="5" data-list-content="e."><span class="ql-blot-gallery-embed ql-blot-gallery ql-gallery-margin-none ql-gallery-frame-none"><span class="ql-gallery-editableimage"><span class="img-wrapper cropped"><img class="gallery-image" width="438px" height="auto" ori-width="1136" src="./ANKI V1.0需求文档（定稿版）_files/Ogkv7YBbo5C4bD2Q__thumbnail.png" style="" ori-height="822" data-src="https://uploader.shimo.im/f/Ogkv7YBbo5C4bD2Q.png!thumbnail"></span></span></span></li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="Ktjr" data-list-number="6" data-list-content="f."><span class="ql-blot-gallery-embed ql-blot-gallery ql-gallery-margin-none ql-gallery-frame-none"><span class="ql-gallery-editableimage"><span class="img-wrapper cropped"><img class="gallery-image" width="287px" height="auto" ori-width="846" src="./ANKI V1.0需求文档（定稿版）_files/nfSLldkEW8ldl2nQ__thumbnail.png" style="" ori-height="1060" data-src="https://uploader.shimo.im/f/nfSLldkEW8ldl2nQ.png!thumbnail"></span></span></span></li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="i8Tp" data-list-number="7" data-list-content="g."><br></li></ol><p line="BxWE"><br></p><p line="lFRi"><br></p><p line="ikXb"><br></p><h1 line="LY6R"><div data-header="1">二、同步功能</div></h1><p line="qyMY"><br></p><p line="LxZw"><strong>开源ANKI同步项目地址：</strong><a class="ql-link" href="https://github.com/ankicommunity/anki-sync-server" target="_blank" rel="noopener noreferrer nofollow">https://github.com/ankicommunity/anki-sync-server</a></p><p line="RK9Q"><strong>官方关于同步功能的说明：</strong><a class="ql-link" href="https://docs.ankiweb.net/#/syncing" target="_blank" rel="noopener noreferrer nofollow">https://docs.ankiweb.net/#/syncing</a></p><ol data-list-style="decimal"><li line="ecqv" data-list-number="1" data-list-content="1." class="ordered-item">功能说明：整体功能上是更换国内服务器，需要同步的数据和同步逻辑基本不变，后端和前端支持所有原本的逻辑，新增云空间校验</li></ol><ol data-list-style="decimal"><li line="m1Lz" data-list-number="2" data-list-content="2." class="ordered-item">同步内容：目前已知同步功能是同步牌组资源和学习设置，详细字段请看源码和手册</li></ol><ol data-list-style="decimal"><li line="7ZAf" data-list-number="3" data-list-content="3." class="ordered-item">ANKI同步设置介绍：目前同步设置是以下3项，同时同步音频和图像、是否打开本地账户时自动同步、下一步同步时，强制单方向的改变。（默认设置不做改动，但需支持该三项设置）</li></ol><ol data-list-style="decimal"><li line="lUS2" data-list-number="4" data-list-content="4." class="ordered-item">相关同步冲突问题：逻辑保持不变，目前ANKI会检测服务端的卡牌资源和客户端的卡牌是否存在冲突，如果存在冲突会弹窗让用户选择下载服务端的还是上传客户端</li></ol><ol data-list-style="decimal"><li line="VlbX" data-list-number="5" data-list-content="5." class="ordered-item">新增同步空间检测：每次同步时检测该用户的个人云存储空间是否有足够存储本次上传的内容，余空间不足，则弹窗提示“你的云空间不足，请升级云空间！”</li></ol><p line="TGcD"><br></p><p line="C7eN"><span class="ql-blot-gallery-embed ql-blot-gallery ql-gallery-margin-none ql-gallery-frame-none"><span class="ql-gallery-editableimage"><span class="img-wrapper cropped"><img class="gallery-image" width="437px" height="auto" ori-width="1118" src="./ANKI V1.0需求文档（定稿版）_files/1mgORuYAspSfELY0__thumbnail.png" style="" ori-height="942" data-src="https://uploader.shimo.im/f/1mgORuYAspSfELY0.png!thumbnail"></span></span></span></p><p line="laPZ"><br></p><h1 line="2lVN"><div data-header="1">三、新增功能入口</div></h1><ol data-list-style="decimal"><li line="7Qns" data-list-number="1" data-list-content="1." class="ordered-item">首页下方增加云存储空间使用情况</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="Ybu1" data-list-number="1" data-list-content="a.">格式：xx.x/xx单位GB和MB，总空间大于1GB时使用GB单位，小于1GB时使用MB单位。例如：23.3GB/50GB、35.4MB/150MB</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="pbZJ" data-list-number="2" data-list-content="b.">点击“扩容”打开云空间套餐开通页</li></ol><ol data-list-style="decimal"><li line="qLBO" data-list-number="2" data-list-content="2." class="ordered-item">其他入口：</li></ol><ul data-list-style="circle"><li line="Wwlq" class="bullet-item">以下功能均以浏览器打开，前端设置默认的URL，后端提供URL更新接口，每次启动应用时更新URL</li></ul><ol data-list-style="decimal"><li class="ordered-item ql-indent-2" line="10e0" data-list-number="1" data-list-content="i.">ANKI教程：URL待提供</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-2" line="lcAH" data-list-number="2" data-list-content="ii.">帮助ANKI中国：打开“捐赠引导弹窗”</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-2" line="YFNu" data-list-number="3" data-list-content="iii.">微信交流群：URL待提供</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-2" line="U3MG" data-list-number="4" data-list-content="iv.">改进意见：URL待提供</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="8Ag7" data-list-number="4" data-list-content="d."><span class="ql-blot-gallery-embed ql-blot-gallery ql-gallery-margin-none ql-gallery-frame-none"><span class="ql-gallery-editableimage"><span class="img-wrapper cropped"><img class="gallery-image" width="500px" height="auto" ori-width="709" src="./ANKI V1.0需求文档（定稿版）_files/cYqz2wszAFf7Fr2A__thumbnail.png" style="" ori-height="644" data-src="https://uploader.shimo.im/f/cYqz2wszAFf7Fr2A.png!thumbnail"></span></span></span></li></ol><h1 line="XFQZ"><div data-header="1">四、更新功能</div></h1><ol data-list-style="decimal"><li line="PsMX" data-list-number="1" data-list-content="1." class="ordered-item">功能说明：删除ANKI自带的更新功能，更改成自己的更新功能，需支持普通更新和强制更新，强制更新无法关闭弹窗（无关闭按钮），普通更新可关闭</li></ol><ol data-list-style="decimal"><li line="xKuo" data-list-number="2" data-list-content="2." class="ordered-item">更新弹窗内容：（后端配置更新文案和下载地址，默认用以下文案）</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="sZJz" data-list-number="1" data-list-content="a.">标题：12个汉字</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-2" line="W9jf" data-list-number="1" data-list-content="i.">默认文案：有新版本啦！</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="RAlC" data-list-number="2" data-list-content="b.">中文：暂不设文字上限，支持换行，居左对齐</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-2" line="dkKR" data-list-number="1" data-list-content="i.">默认文案：产品体验优化，建议更新！</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="R1Qe" data-list-number="3" data-list-content="c.">下载按钮：点击后打开anki中国更新地址下载</li></ol><ol data-list-style="decimal"><li line="cWNX" data-list-number="3" data-list-content="3." class="ordered-item">弹窗逻辑：</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="yO9Y" data-list-number="1" data-list-content="a.">普通弹窗：弹窗触发在用户打开ANKI时每次请求是否有更新，有更新，立即弹出更新弹窗。普通更新弹窗用户关闭后7天后再弹出。</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="hf89" data-list-number="2" data-list-content="b.">强制更新：每次弹出，并且隐藏关闭按钮，无法关闭</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="P5Gr" data-list-number="3" data-list-content="c."><span class="ql-blot-gallery-embed ql-blot-gallery ql-gallery-margin-none ql-gallery-frame-none"><span class="ql-gallery-editableimage"><span class="img-wrapper cropped"><img class="gallery-image" width="459px" height="auto" ori-width="1158" src="./ANKI V1.0需求文档（定稿版）_files/M2UpB8XQDChNsBwi__thumbnail.png" style="" ori-height="946" data-src="https://uploader.shimo.im/f/M2UpB8XQDChNsBwi.png!thumbnail"></span></span></span></li></ol><h1 line="VDEV"><div data-header="1">五、云存储支付功能（WEB）</div></h1><p line="WXGJ"><strong>云存储套餐开通主流程：</strong>套餐选择-&gt;生成订单-&gt;支付宝支付-&gt;套餐服务开通，一个用户开通多个套餐分别计算有效期，存储空间相加。</p><p line="6bY4"><br></p><p line="qsYS"><strong>打开前置：</strong>打开本页但用户未登陆的情况下，先自动跳转至登录页，登录完成后自动跳转回本页</p><p line="Z9NT"><br></p><p line="ImiT"><strong>触发逻辑：</strong>情况①：用户操作同步功能时，先检测当前同步大小与云存储空间对比，同步空间不足时，自动打开本页  情况② 用户操作同步时，尚未开通云存储，自动打开本页 </p><p line="ShzB"><br></p><p line="0O8V">1.当前方案：显示当前的套餐方案（目前有“200MB7天免费 5GB1年、50G1年、1000G1年”4种方案），默认开通7天免费200MB的免费套餐，当同时开通多个套餐时，当前方案显示存储空间最大的套餐和其有效期</p><p line="WLxe"><br></p><p line="9Bti">2.购买套餐：</p><ul data-list-style="circle"><li line="Qp1l" class="bullet-item">点击套餐完成选中，点击立即支付时检测是否登录，未登录时弹出登录弹窗，已登录则打开二维码弹窗</li></ul><p line="dYWf"><br></p><p line="ne3p">3.同时购买多个不同套餐：每个套餐都是对存储空间一段时间的扩充，购买多个套餐时存储空间和有效期还是分别计算，套餐内容之间不互相影响。</p><p line="CCny"><br></p><p class="ql-indent-1" line="oWpY">例如：用户已经购买了5GB一年的套餐，有效期是2020年1月-2021年1月，这时他的总空间是5GB+150MB（免费的空间），2020年2月他再购买了50GB一年的套餐后，这时总存储空间是50GB+5GB+150MB。5G空间有效期是2020年1月-2021年1月、50GB有效期是2020年2月-2021年2月。</p><p line="U2PB"><br></p><p line="l5iy">4.同一个套餐购买多次：增加该套餐的时长，不增加存储空间，如已购买了5GB套餐，有效期至2020年07月15日、再购买一次5GB套餐。有效期则增加一年至2021年07月15日</p><p line="c8nU"><br></p><p line="oDUz"><br></p><p line="nr76">5.支付宝二维码：</p><p line="fp2U"><br></p><p line="2xdf"><br></p><ul data-list-style="circle"><li line="gYIl" class="bullet-item">打开二维码时生成订单信息：用户ID、订单状态（待支付、已支付）、订单号、套餐ID、存储空间、金额、订单生成时间、订单支付时间</li></ul><ul data-list-style="circle"><li line="Wps8" class="bullet-item">订单支付成功后：订单信息增加套餐开始时间和结束时间字段</li></ul><ul data-list-style="circle"><li line="TXuA" class="bullet-item">扫码后二维码</li></ul><ul data-list-style="circle"><li class="bullet-item ql-indent-1" line="Tm5u">每5分钟刷新一次二维码，二维码有效时长为5分钟</li></ul><ul data-list-style="circle"><li class="bullet-item ql-indent-1" line="LsRW">支付成功提示：</li></ul><ul data-list-style="circle"><li class="bullet-item ql-indent-2" line="j0i2">提升空间成功：支付成功，已成功增加50GB云存储空间，有效期至2020年07月15日</li></ul><ul data-list-style="circle"><li class="bullet-item ql-indent-2" line="YvWp">时长延长成功：支付成功，5G云存储空间有效期延长至2021年07月15日</li></ul><p line="yHS7">6.套餐开通成功后：关闭支付二维码后，刷新套餐页</p><p line="8RA5"><br></p><p line="jvrI"><br></p><p line="XcgI">7.后端记录用户套餐记录：</p><p line="JI5M">用户ID、套餐ID、存储空间、套餐开始时间（付款后更新）、套餐结束时间（付款后更新）</p><p line="sHnK"><br></p><p line="yTSt"><span class="ql-blot-gallery-embed ql-blot-gallery ql-gallery-margin-none ql-gallery-frame-none"><span class="ql-gallery-editableimage"><span class="img-wrapper cropped"><img class="gallery-image" width="436px" height="auto" ori-width="1152" src="./ANKI V1.0需求文档（定稿版）_files/IVtIuI41XvlapLud__thumbnail.png" style="" ori-height="1006" data-src="https://uploader.shimo.im/f/IVtIuI41XvlapLud.png!thumbnail"></span></span></span></p><p line="puHs"><span class="ql-blot-gallery-embed ql-blot-gallery ql-gallery-margin-none ql-gallery-frame-none"><span class="ql-gallery-editableimage"><span class="img-wrapper cropped"><img class="gallery-image" width="432px" height="auto" ori-width="1134" src="./ANKI V1.0需求文档（定稿版）_files/KWi8fAYm6r1UbiJr__thumbnail.png" style="" ori-height="1030" data-src="https://uploader.shimo.im/f/KWi8fAYm6r1UbiJr.png!thumbnail"></span></span></span></p><p line="A619"><br></p><p line="Tqr2"><span class="ql-blot-gallery-embed ql-blot-gallery ql-gallery-margin-none ql-gallery-frame-none"><span class="ql-gallery-editableimage"><span class="img-wrapper cropped"><img class="gallery-image" width="437px" height="auto" ori-width="615" src="./ANKI V1.0需求文档（定稿版）_files/TBk6bsXrs7q7yyt0__thumbnail.png" style="" ori-height="551" data-src="https://uploader.shimo.im/f/TBk6bsXrs7q7yyt0.png!thumbnail"></span></span></span></p><p line="OJbZ"><span class="ql-blot-gallery-embed ql-blot-gallery ql-gallery-margin-none ql-gallery-frame-none"><span class="ql-gallery-editableimage"><span class="img-wrapper cropped"><img class="gallery-image" width="439px" height="auto" ori-width="618" src="./ANKI V1.0需求文档（定稿版）_files/EGSgdFDXZoBKjN2z__thumbnail.png" style="" ori-height="550" data-src="https://uploader.shimo.im/f/EGSgdFDXZoBKjN2z.png!thumbnail"></span></span></span></p><h1 line="lENA"><div data-header="1"><br></div></h1><h1 line="vWnE"><div data-header="1">七、翻译需求</div></h1><ol data-list-style="decimal"><li line="Wvi3" data-list-number="1" data-list-content="1." class="ordered-item">需求说明：完成脑图上的中文翻译需求</li></ol><p line="S6Kv"><span class="ql-blot-gallery-embed ql-blot-gallery ql-gallery-margin-none ql-gallery-frame-none"><span class="ql-gallery-editableimage"><span class="img-wrapper cropped"><img class="gallery-image" width="1180" height="auto" ori-width="1180" src="./ANKI V1.0需求文档（定稿版）_files/NegKWXULgbFH9mol__thumbnail.jpg" style="" ori-height="640" data-src="https://uploader.shimo.im/f/NegKWXULgbFH9mol.jpg!thumbnail"></span></span></span></p><h1 line="E8JP"><div data-header="1">八、内置插件</div></h1><p line="vTEp"><strong>需求：</strong>将压缩包的内的三个插件内置到安装包内，用户安装完ANKI中国后即可使用插件。</p><p line="hIDZ"><br></p><p line="5G8t"><strong>插件安装方式：</strong>ANKI插件的本地安装方式，将插件文件解压后放置在ANKI安装目录下的addons21的文件夹内即完成安装。</p><p line="CXkM"><br></p><p line="kqaq"><strong>将以下压缩包内的三个插件内置到安装包内。</strong></p><p line="vRIk">链接: <a class="ql-link" href="https://pan.baidu.com/s/1sMK-qk0dPDAeR-CNXXclTg" target="_blank" rel="noopener noreferrer nofollow">https://pan.baidu.com/s/1sMK-qk0dPDAeR-CNXXclTg</a> 提取码: qa6d</p><h1 line="6HmO"><div data-header="1">九、内置卡片模板</div></h1><ol data-list-style="decimal"><li line="oK0M" data-list-number="1" data-list-content="1." class="ordered-item">将下载链接内的牌片内的模板内置进ANKI中国，并保留官方模板（每张卡片就会带有卡片模板）</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="ZLj6" data-list-number="1" data-list-content="a.">卡片模板下载：链接:https://pan.baidu.com/s/1AKf9WlX2a1qivIKmIJUhqQ&nbsp; 密码:o6mf</li></ol><ol data-list-style="decimal"><li line="2o8J" data-list-number="2" data-list-content="2." class="ordered-item">卡片模板位置：添加-&gt;类型</li></ol><ol data-list-style="decimal"><li line="JL2r" data-list-number="3" data-list-content="3." class="ordered-item">模板的内置在用户使用端是通过导入牌组实现，导入牌组会就会获得该卡片的模板，但模板是存在哪个目录下暂未知，模板内置方式也未知，需阅读开发文档和了解源代码或搜索安装目录方式了解。</li></ol><p line="xrJm"><span class="ql-blot-gallery-embed ql-blot-gallery ql-gallery-margin-none ql-gallery-frame-none"><span class="ql-gallery-editableimage"><span class="img-wrapper cropped"><img class="gallery-image" width="555px" height="auto" ori-width="912" src="./ANKI V1.0需求文档（定稿版）_files/ShPXQWkPc29ktYBf__thumbnail.png" style="" ori-height="758" data-src="https://uploader.shimo.im/f/ShPXQWkPc29ktYBf.png!thumbnail"></span></span></span></p><p line="MBP3"><br></p><h1 line="0ZBC"><div data-header="1">九、修改应用名</div></h1><ol data-list-style="decimal"><li class="ordered-item ql-heading-2" line="JyPF" data-list-number="1" data-list-content="1.">将桌面名称改成“Anki中国”</li></ol><p line="tBqx"><br></p><p class="ql-heading-title" line="ZLeS">Android版</p><h2 line="tL4n"><div data-header="2">GitHub主页：<a class="ql-link" href="https://github.com/ankitects" target="_blank" rel="noopener noreferrer nofollow">https://github.com/ankitects</a></div></h2><ul data-list-style="circle"><li line="hPBI" class="bullet-item">Android项目地址：<a class="ql-link" href="https://github.com/ankidroid/Anki-Android/wiki" target="_blank" rel="noopener noreferrer nofollow">https://github.com/ankidroid/Anki-Android/wiki</a></li></ul><ul data-list-style="circle"><li line="CvtO" class="bullet-item">Android文档：<a class="ql-link" href="https://github.com/ankitects/ankimobile-docs" target="_blank" rel="noopener noreferrer nofollow">https://github.com/ankitects/ankimobile-docs</a></li></ul><p line="ekqt"><br></p><h1 line="uw9v"><div data-header="1">一、手机验证码登录（WEB）</div></h1><ol data-list-style="decimal"><li line="ccC4" data-list-number="1" data-list-content="1." class="ordered-item">需求说明：将ANKI的账号登录改成手机号登录和注册</li></ol><ol data-list-style="decimal"><li line="WWWd" data-list-number="2" data-list-content="2." class="ordered-item">触发登录情况：</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="fNt7" data-list-number="1" data-list-content="a.">用户安装后首次打开ANKI时出发登录弹窗。</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="UXEA" data-list-number="2" data-list-content="b.">用户在打开支付或操作同步功能未登录时，自动打开登录页</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="dUXI" data-list-number="3" data-list-content="c.">用户在设置-&gt;常用设置-&gt;ANKI账户，点击此时打开登录页</li></ol><ol data-list-style="decimal"><li line="FnX5" data-list-number="3" data-list-content="3." class="ordered-item">登录有效期：登录后永久保存登录状态。无网络时不弹出登录弹窗</li></ol><ol data-list-style="decimal"><li line="gCwa" data-list-number="4" data-list-content="4." class="ordered-item">手机号输入：仅限11位的数字输入</li></ol><ol data-list-style="decimal"><li line="o3Vp" data-list-number="5" data-list-content="5." class="ordered-item">验证码：支持字母和数字输入，点击“获取验证码”后文案改成“重新获取验证码+120S倒计时”</li></ol><ol data-list-style="decimal"><li line="Pxcq" data-list-number="6" data-list-content="6." class="ordered-item">邀请码：点击打开网页（通过自由URL跳转到指定URL，方便后面更换新URL不需要更新版本）打开网页后，会让用户先关注ANKI中国的微信公众号，通过ANKI的自动回复发放邀请码</li></ol><ol data-list-style="decimal"><li line="UchY" data-list-number="7" data-list-content="7." class="ordered-item">登录按钮：输入验证码后登录按钮高亮可点击</li></ol><ol data-list-style="decimal"><li line="Jagg" data-list-number="8" data-list-content="8." class="ordered-item">错误toast提示：</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="CC6q" data-list-number="1" data-list-content="a.">toast逻辑：由后端触发，文案也由后端提供，2秒后自动消失</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="qBbr" data-list-number="2" data-list-content="b.">错误情况</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-2" line="xqIq" data-list-number="1" data-list-content="i.">手机号错误：请输入正确的手机号（无此手机号时）</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-2" line="QgFd" data-list-number="2" data-list-content="ii.">验证码错误：验证码错误</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-2" line="zOtr" data-list-number="3" data-list-content="iii.">网络异常：无网络，请检查网络后重试</li></ol><ol data-list-style="decimal"><li line="d2KW" data-list-number="9" data-list-content="9." class="ordered-item"><span class="ql-blot-gallery-embed ql-blot-gallery ql-gallery-margin-none ql-gallery-frame-none"><span class="ql-gallery-editableimage"><span class="img-wrapper cropped"><img class="gallery-image" width="251px" height="auto" ori-width="594" src="./ANKI V1.0需求文档（定稿版）_files/On3XsMuDYyUOUTNR.png__thumbnail" style="" ori-height="1158" data-src="https://uploader.shimo.im/f/On3XsMuDYyUOUTNR.png!thumbnail"></span></span></span></li></ol><h1 line="vJrC"><div data-header="1">二、同步功能</div></h1><p line="o4b8"><strong>开源ANKI同步项目地址：</strong><a class="ql-link" href="https://github.com/ankicommunity/anki-sync-server" target="_blank" rel="noopener noreferrer nofollow">https://github.com/ankicommunity/anki-sync-server</a></p><p line="5wun"><strong>官方关于同步功能的说明：</strong><a class="ql-link" href="https://docs.ankiweb.net/#/syncing" target="_blank" rel="noopener noreferrer nofollow">https://docs.ankiweb.net/#/syncing</a></p><ol data-list-style="decimal"><li line="p7S4" data-list-number="1" data-list-content="1." class="ordered-item">功能说明：整体功能上是更换国内服务器，需要同步的数据和同步逻辑基本不变，后端和前端支持所有原本的逻辑，新增云空间校验</li></ol><ol data-list-style="decimal"><li line="4I42" data-list-number="2" data-list-content="2." class="ordered-item">同步内容：目前已知同步功能是同步牌组资源和学习设置，详细字段请看源码和手册</li></ol><ol data-list-style="decimal"><li line="6RCG" data-list-number="3" data-list-content="3." class="ordered-item">相关同步冲突问题：逻辑保持不变，目前ANKI会检测服务端的卡牌资源和客户端的卡牌是否存在冲突，如果存在冲突会弹窗让用户选择下载服务端的还是上传客户端</li></ol><ol data-list-style="decimal"><li line="hYId" data-list-number="4" data-list-content="4." class="ordered-item">新增同步空间检测：每次同步时检测该用户的个人云存储空间是否有足够存储本次上传的内容，余空间不足，则弹窗提示“你的云空间不足，请升级云空间！”</li></ol><p line="7iz8">（<span style="color: #ff0000;">注：左1是ANKI自带的弹窗，右是需要新增的弹窗）</span></p><p line="cxGd"><span class="ql-blot-gallery-embed ql-blot-gallery ql-gallery-margin-none ql-gallery-frame-none"><span class="ql-gallery-editableimage"><span class="img-wrapper cropped"><img class="gallery-image" width="173px" height="auto" ori-width="1080" src="./ANKI V1.0需求文档（定稿版）_files/9EinpGyjTnVeK79O.png__thumbnail" style="" ori-height="2340" data-src="https://uploader.shimo.im/f/9EinpGyjTnVeK79O.png!thumbnail"></span></span></span><span class="ql-blot-gallery-embed ql-blot-gallery ql-gallery-margin-none ql-gallery-frame-none"><span class="ql-gallery-editableimage"><span class="img-wrapper cropped"><img class="gallery-image" width="172px" height="auto" ori-width="227" src="./ANKI V1.0需求文档（定稿版）_files/3m0AlFf3PdvA9XkR__thumbnail.png" style="" ori-height="502" data-src="https://uploader.shimo.im/f/3m0AlFf3PdvA9XkR.png!thumbnail"></span></span></span><span class="ql-blot-gallery-embed ql-blot-gallery ql-gallery-margin-none ql-gallery-frame-none"><span class="ql-gallery-editableimage"><span class="img-wrapper cropped"><img class="gallery-image" width="180px" height="auto" ori-width="528" src="./ANKI V1.0需求文档（定稿版）_files/usb9ODJY6VfSuEDo__thumbnail.png" style="" ori-height="1112" data-src="https://uploader.shimo.im/f/usb9ODJY6VfSuEDo.png!thumbnail"></span></span></span></p><p line="77Lq"><span class="ql-blot-gallery-embed ql-blot-gallery ql-gallery-margin-none ql-gallery-frame-none"><span class="ql-gallery-editableimage"><span class="img-wrapper cropped"><img class="gallery-image" width="172px" height="auto" ori-width="1080" src="./ANKI V1.0需求文档（定稿版）_files/bLhL3iFdv8mhUAqc__thumbnail.png" style="" ori-height="2340" data-src="https://uploader.shimo.im/f/bLhL3iFdv8mhUAqc.png!thumbnail"></span></span></span></p><p line="7qHA"><br></p><p line="6rkr"><br></p><h1 line="3MmO"><div data-header="1">三、新增功能入口</div></h1><ol data-list-style="decimal"><li line="cu0I" data-list-number="1" data-list-content="1." class="ordered-item">左侧新增“升级云空间”入口，并显示当前空间情况</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="ui4b" data-list-number="1" data-list-content="a.">格式：xx.x/xx单位GB和MB，总空间大于1GB时使用GB单位，小于1GB时使用MB单位。例如：23.3GB/50GB、35.4MB/150MB</li></ol><ol data-list-style="decimal"><li line="Omaf" data-list-number="2" data-list-content="2." class="ordered-item">其他入口：</li></ol><ul data-list-style="circle"><li line="cght" class="bullet-item">以下功能均以浏览器打开，前端设置默认的URL，后端提供URL更新接口，每次启动应用时更新URL</li></ul><ol data-list-style="decimal"><li class="ordered-item ql-indent-2" line="U1si" data-list-number="1" data-list-content="i.">ANKI教程：URL待提供</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-2" line="aWWG" data-list-number="2" data-list-content="ii.">帮助ANKI中国：打开“捐赠引导弹窗”</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-2" line="lcXl" data-list-number="3" data-list-content="iii.">微信交流群：URL待提供</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-2" line="sDS7" data-list-number="4" data-list-content="iv.">改进意见：URL待提供</li></ol><p line="gpyF"><span class="ql-blot-gallery-embed ql-blot-gallery ql-gallery-margin-none ql-gallery-frame-none"><span class="ql-gallery-editableimage"><span class="img-wrapper cropped"><img class="gallery-image" width="222px" height="auto" ori-width="416" src="./ANKI V1.0需求文档（定稿版）_files/tAuHPSyVGMbWuoH4__thumbnail" style="" ori-height="914" data-src="https://uploader.shimo.im/f/tAuHPSyVGMbWuoH4.png!thumbnail"></span></span></span></p><h1 line="Smwa"><div data-header="1">四、更新功能</div></h1><p line="3eu3">接入bugly</p><h1 line="HlSQ"><div data-header="1">五、内置卡片模板</div></h1><p line="5sS6"><br></p><ol data-list-style="decimal"><li line="778h" data-list-number="1" data-list-content="1." class="ordered-item">将下载链接内的牌组内的模板内置进ANKI中国，并删除掉官方模板，</li></ol><ol data-list-style="decimal"><li class="ordered-item ql-indent-1" line="TvRI" data-list-number="1" data-list-content="a.">牌组：</li></ol><ol data-list-style="decimal"><li line="2eHy" data-list-number="2" data-list-content="2." class="ordered-item">卡片模板位置：添加-&gt;类型</li></ol><ol data-list-style="decimal"><li line="6F7L" data-list-number="3" data-list-content="3." class="ordered-item">模板的内置在用户使用端是通过导入牌组实现，导入牌组会就会获得该卡片的模板，但模板是存在哪个目录下暂未知，模板内置方式也未知，需阅读开发文档和了解源代码或搜索安装目录方式了解。</li></ol><p line="TRz4"><br></p><p line="yxjU"><br></p><h1 line="Zo12"><div data-header="1">六、云存储套餐开通页（WEB）</div></h1><p line="Dm3j"><strong>云存储套餐开通主流程：</strong>套餐选择-&gt;生成订单-&gt;支付宝支付-&gt;套餐服务开通，一个用户开通多个套餐分别计算有效期，存储空间相加。</p><p line="X6Vi"><br></p><p line="G1mq"><strong>打开前置：</strong>打开本页但用户未登陆的情况下，先自动跳转至登录页，登录完成后自动跳转回本页</p><p line="fozc"><br></p><p line="PyD7"><strong>触发逻辑：</strong>情况①：用户操作同步功能时，先检测当前同步大小与云存储空间对比，同步空间不足时，自动打开本页  情况② 用户操作同步时，尚未开通云存储，自动打开本页 </p><p line="4ryo"><br></p><p line="1mo2"><br></p><p line="7ubh">1.当前方案：显示当前的套餐方案（目前有“200MB7天免费 5GB1年、50G1年、1000G1年”4种方案），默认开通7天免费200MB的免费套餐，当同时开通多个套餐时，当前方案显示存储空间最大的套餐和其有效期</p><p line="juRd"><br></p><p line="G8f4"><br></p><p line="ZmHl">2.购买套餐：</p><ul data-list-style="circle"><li line="UROR" class="bullet-item">点击套餐完成选中，点击立即支付时检测是否登录，未登录时弹出登录弹窗，已登录则打开二维码弹窗</li></ul><p line="Xrva"><br></p><p line="aWVv">3.同时购买多个不同套餐：每个套餐都是对存储空间一段时间的扩充，购买多个套餐时存储空间和有效期还是分别计算，套餐内容之间不互相影响。</p><p line="EmPj"><br></p><p class="ql-indent-1" line="BFSA">例如：用户已经购买了5GB一年的套餐，有效期是2020年1月-2021年1月，这时他的总空间是5GB+150MB（免费的空间），2020年2月他再购买了50GB一年的套餐后，这时总存储空间是50GB+5GB+150MB。5G空间有效期是2020年1月-2021年1月、50GB有效期是2020年2月-2021年2月。</p><p line="4cBk"><br></p><p line="pS0w">4.同一个套餐购买多次：增加该套餐的时长，不增加存储空间，如已购买了5GB套餐，有效期至2020年07月15日、再购买一次5GB套餐。有效期则增加一年至2021年07月15日</p><p line="GCCl"><br></p><p line="LkQZ"><br></p><p line="n7cv">5.支付宝二维码：</p><p line="3ASh"><br></p><p line="0jjW"><br></p><ul data-list-style="circle"><li line="9FdO" class="bullet-item">点击立即支付时生成订单信息：用户ID、订单状态（待支付、已支付）、订单号、套餐ID、存储空间、金额、订单生成时间、订单支付时间</li></ul><ul data-list-style="circle"><li line="cvTX" class="bullet-item">订单支付成功后：订单信息增加套餐开始时间和结束时间字段</li></ul><ul data-list-style="circle"><li line="kDBy" class="bullet-item">支付TOAST提示</li></ul><ul data-list-style="circle"><li class="bullet-item ql-indent-1" line="e3cp">支付成功</li></ul><ul data-list-style="circle"><li class="bullet-item ql-indent-2" line="uhF0">文案：已开通</li></ul><ul data-list-style="circle"><li class="bullet-item ql-indent-1" line="q46U">支付失败</li></ul><ul data-list-style="circle"><li class="bullet-item ql-indent-2" line="cMyX">文案：已取消</li></ul><p line="IVQD"><br></p><p line="yz1E"><br></p><p line="r1NO">7.后端记录用户开通套餐的历史记录：</p><ul data-list-style="circle"><li line="17e5" class="bullet-item">套餐ID、存储空间、套餐开始时间（付款后更新）、套餐结束时间（付款后更新）</li></ul><h1 line="aKyv"><div data-header="1">八、其他需求</div></h1><ol data-list-style="decimal"><li line="xJh6" class="ordered-item ql-size-11" data-list-number="1" data-list-content="1."><span class="ql-size-11">Android包名更换为自有包名：</span><span style="color: #333333;" class="ql-font-microsoftyahei ql-size-11">com.app.ankichinas</span></li></ol><ol data-list-style="decimal"><li style="color: #333333;" line="zGAi" class="ordered-item ql-size-11" data-list-number="2" data-list-content="2."><span style="color: #333333;" class="ql-font-microsoftyahei ql-size-11">应用名修改成“Anki中国”</span></li></ol><p class="ql-heading-title" line="9Ubb"><br></p><p class="ql-heading-title" line="Wnt2">管理后台需求</p><p line="mIo5"><br></p><p line="XwcT">需求：下方原型是需求描述，如何实现可以根据如何快速如何开发，不要求样式、体验，能完成以下功能即可</p><p line="Ezgv"><br></p><p line="nXhv"><br></p><p line="YpiG"><br></p><h2 line="acVh"><div data-header="2"><strong>1.登录：</strong></div></h2><p line="Ao9J">提供唯一的账号和密码，无需修改密码这些，尽量不花费时间</p><p line="9gsn"><br></p><h2 line="ztij"><div data-header="2"><strong>2.下载数据：</strong></div></h2><p line="z8Jf">点击运营数据/订单记录时，生成数据后自动下载，以Excel的方式导出</p><p line="PMLq"><br></p><p line="oWv5"><strong>运营数据包含以下：</strong></p><p line="oyZx">1.近90天的注册数：包含当天的数据</p><p line="0W6X">2.近90天的登录数：包含当天的数据</p><p line="Xzld">3.近90天累计注册数：包含当天的数据</p><p line="jmy6"><br></p><p line="vfz4"><strong>订单数据包含以下：</strong></p><p line="0cua">1近30天的订单记录：用户ID、订单生成时间、支付时间、支付金额、套餐ID、存储量、</p><p line="pTCD"><br></p><h2 line="5Ovc"><div data-header="2"><strong>3.导航栏设置</strong></div></h2><p line="l8NG">对接Android和MAC、Windows端的导航入口设置，设置项为：入口名、图标、URL，点击保存完成该项设置</p><p line="amHp"><br></p><h2 line="L3v0"><div data-header="2"><strong>4.更新设置</strong></div></h2><p line="ezKm">分别设置MAC版和Windows的更新功能，即对接电脑端前面所写的更新需求，设置项为：更新模式（强制、普通）、标题、描述、文件下载地址</p><p line="XnI6"><br></p><p line="R3Ho"><br></p><p line="qI4E"><br></p><p line="oaLl"><br></p><p line="TnC4"><br></p><p line="Pmbj"><span class="ql-blot-gallery-embed ql-blot-gallery ql-gallery-margin-none ql-gallery-frame-none"><span class="ql-gallery-editableimage"><span class="img-wrapper cropped"><img class="gallery-image" width="706" height="auto" ori-width="706" src="./ANKI V1.0需求文档（定稿版）_files/rSCsXhmQO9EsAaq9__thumbnail.png" style="" ori-height="400" data-src="https://uploader.shimo.im/f/rSCsXhmQO9EsAaq9.png!thumbnail"></span></span></span></p><p line="hQgf"><br></p><p line="CoFZ"><span class="ql-blot-gallery-embed ql-blot-gallery ql-gallery-margin-none ql-gallery-frame-none"><span class="ql-gallery-editableimage"><span class="img-wrapper cropped"><img class="gallery-image" width="1892" height="auto" ori-width="1892" src="./ANKI V1.0需求文档（定稿版）_files/29yJBBqsLRJ4CNnu__thumbnail.png" style="" ori-height="1456" data-src="https://uploader.shimo.im/f/29yJBBqsLRJ4CNnu.png!thumbnail"></span></span></span></p><p line="Lrcm"><span class="ql-blot-gallery-embed ql-blot-gallery ql-gallery-margin-none ql-gallery-frame-none"><span class="ql-gallery-editableimage"><span class="img-wrapper cropped"><img class="gallery-image" width="1888" height="auto" ori-width="1888" src="./ANKI V1.0需求文档（定稿版）_files/j59q2ktR60hhwvnc__thumbnail.png" style="" ori-height="1204" data-src="https://uploader.shimo.im/f/j59q2ktR60hhwvnc.png!thumbnail"></span></span></span></p><p line="mB5k"><br></p><p line="rb4C"><br></p><p line="ENIf"><br></p></div>
+                <div class="ql-table-of-content" style="top: 51px; height: calc(100% - 51px); width: 315px; margin-left: -315px;"><div id="new-directory" class="table-of-content"><div class="doc-directory-menu"><div class="doc-directory-menu-line"></div><div class="doc-directory-menu-line"></div><div class="doc-directory-menu-line"></div></div><div class="new-doc-directory"><div class="doc-directory-title"><span>目录</span><span class="doc-directory-close"><!--?xml version="1.0" encoding="utf-8"?--> <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.6 15.6"> <path d="M9.2 7.8l6.4-6.4L14.2 0 7.8 6.4 1.4 0 0 1.4l6.4 6.4L0 14.2l1.4 1.4 6.4-6.4 6.4 6.4 1.4-1.4z" fill="#a5a5a5"> </path> </svg> </span></div><div class="doc-directory-content ps ps--theme_default ps--active-y" data-ps-id="d083a430-f80c-6024-3015-10116bb2667b"><ul class="doc-directory-list has-heading-4 has-heading-3 has-heading-2 has-more-title"><li class="toc-entry heading-4 header-indent-undefined" data-index="0" data-offset="76"><div class="dic-text">原型地址</div></li><li class="toc-entry heading-4 header-indent-undefined hasChildren" data-index="1" data-offset="206"><span class="icon-collapsed"><!--?xml version="1.0" encoding="utf-8"?--> <svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 10" style="enable-background:new 0 0 10 10" xml:space="preserve"> <g id="Artboard"> <polygon id="Triangle-3-Copy-13" style="fill:#a5a5a5" points="8,5.5 3,9 3,2 	"></polygon> </g> </svg> </span><div class="dic-text">MAC&amp;Windows版</div></li><li class="toc-entry heading-3 header-indent-undefined hasChildren" data-index="2" data-offset="270"><span class="icon-collapsed"><!--?xml version="1.0" encoding="utf-8"?--> <svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 10" style="enable-background:new 0 0 10 10" xml:space="preserve"> <g id="Artboard"> <polygon id="Triangle-3-Copy-13" style="fill:#a5a5a5" points="8,5.5 3,9 3,2 	"></polygon> </g> </svg> </span><div class="dic-text">整体说明：基于ANKI 2.1.15开发，输出MAC版安装文件、Windows的64位和32位两个安装文件</div></li><li class="toc-entry heading-2 header-indent-undefined" data-index="3" data-offset="360"><div class="dic-text">GitHub主页：https://github.com/ankitects</div></li><li class="toc-entry heading-3 header-indent-undefined" data-index="4" data-offset="507"><div class="dic-text">一、手机验证码登录 </div></li><li class="toc-entry heading-3 header-indent-undefined" data-index="5" data-offset="1782"><div class="dic-text">二、同步功能</div></li><li class="toc-entry heading-3 header-indent-undefined" data-index="6" data-offset="2574"><div class="dic-text">三、新增功能入口</div></li><li class="toc-entry heading-3 header-indent-undefined" data-index="7" data-offset="3354"><div class="dic-text">四、更新功能</div></li><li class="toc-entry heading-3 header-indent-undefined" data-index="8" data-offset="4079"><div class="dic-text">五、云存储支付功能（WEB）</div></li><li class="toc-entry heading-3 header-indent-undefined" data-index="9" data-offset="6881"><div class="dic-text">七、翻译需求</div></li><li class="toc-entry heading-3 header-indent-undefined" data-index="10" data-offset="7294"><div class="dic-text">八、内置插件</div></li><li class="toc-entry heading-3 header-indent-undefined" data-index="11" data-offset="7519"><div class="dic-text">九、内置卡片模板</div></li><li class="toc-entry heading-3 header-indent-undefined hasChildren" data-index="12" data-offset="8231"><span class="icon-collapsed"><!--?xml version="1.0" encoding="utf-8"?--> <svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 10" style="enable-background:new 0 0 10 10" xml:space="preserve"> <g id="Artboard"> <polygon id="Triangle-3-Copy-13" style="fill:#a5a5a5" points="8,5.5 3,9 3,2 	"></polygon> </g> </svg> </span><div class="dic-text">九、修改应用名</div></li><li class="toc-entry heading-2 header-indent-undefined" data-index="13" data-offset="8275"><div class="dic-text">1.将桌面名称改成“Anki中国”</div></li><li class="toc-entry heading-4 header-indent-undefined hasChildren" data-index="14" data-offset="8332"><span class="icon-collapsed"><!--?xml version="1.0" encoding="utf-8"?--> <svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 10" style="enable-background:new 0 0 10 10" xml:space="preserve"> <g id="Artboard"> <polygon id="Triangle-3-Copy-13" style="fill:#a5a5a5" points="8,5.5 3,9 3,2 	"></polygon> </g> </svg> </span><div class="dic-text">Android版</div></li><li class="toc-entry heading-2 header-indent-undefined" data-index="15" data-offset="8396"><div class="dic-text">GitHub主页：https://github.com/ankitects</div></li><li class="toc-entry heading-3 header-indent-undefined" data-index="16" data-offset="8518"><div class="dic-text">一、手机验证码登录（WEB）</div></li><li class="toc-entry heading-3 header-indent-undefined" data-index="17" data-offset="9527"><div class="dic-text">二、同步功能</div></li><li class="toc-entry heading-3 header-indent-undefined" data-index="18" data-offset="10621"><div class="dic-text">三、新增功能入口</div></li><li class="toc-entry heading-3 header-indent-undefined" data-index="19" data-offset="11403"><div class="dic-text">四、更新功能</div></li><li class="toc-entry heading-3 header-indent-undefined" data-index="20" data-offset="11480"><div class="dic-text">五、内置卡片模板</div></li><li class="toc-entry heading-3 header-indent-undefined" data-index="21" data-offset="11755"><div class="dic-text">六、云存储套餐开通页（WEB）</div></li><li class="toc-entry heading-3 header-indent-undefined" data-index="22" data-offset="12923"><div class="dic-text">八、其他需求</div></li><li class="toc-entry heading-4 header-indent-undefined hasChildren" data-index="23" data-offset="13073"><span class="icon-collapsed"><!--?xml version="1.0" encoding="utf-8"?--> <svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 10" style="enable-background:new 0 0 10 10" xml:space="preserve"> <g id="Artboard"> <polygon id="Triangle-3-Copy-13" style="fill:#a5a5a5" points="8,5.5 3,9 3,2 	"></polygon> </g> </svg> </span><div class="dic-text">管理后台需求</div></li><li class="toc-entry heading-2 header-indent-undefined" data-index="24" data-offset="13286"><div class="dic-text">1.登录：</div></li><li class="toc-entry heading-2 header-indent-undefined" data-index="25" data-offset="13384"><div class="dic-text">2.下载数据：</div></li><li class="toc-entry heading-2 header-indent-undefined" data-index="26" data-offset="13681"><div class="dic-text">3.导航栏设置</div></li><li class="toc-entry heading-2 header-indent-undefined" data-index="27" data-offset="13804"><div class="dic-text">4.更新设置</div></li></ul><div class="ps__scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps__scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__scrollbar-y-rail" style="top: 0px; right: 0px; height: 578px;"><div class="ps__scrollbar-y" tabindex="0" style="top: 0px; height: 385px;"></div></div></div></div></div></div></div>
+                <div id="file-page-footer"><div class="sc-bdVaJa cEcoPi"><span class="sc-bwzfXH bNCcSM">二十<!-- --> &nbsp;阅</span></div><div class="sm-ad-wrapper pos-pc-readonly-doc-bottom" style="max-width: 816px; margin: 15px auto;"></div><div class="sm-ad-wrapper pos-pc-readonly-doc-bottom-2" style="max-width: 816px; margin: 15px auto;"></div></div>
+            </div>
+        </div>
+        <script>
+          window.__SHIMO__ = {
+            file: {"is_folder":0,"permissions":{"readable":true,"editable":false,"commentable":false,"manageable":false,"exitable":false,"exportable":true,"collaboratorManageable":false,"adminManageable":false,"outsiderAddable":false,"childFileCreatable":false,"shareModeManageable":false,"teamShareModeManageable":false,"copyable":true,"lockable":false,"unlockable":false,"removable":false,"downloadable":false},"url":"/docs/9avKycHKHm8ZSON9","isDelete":0,"namePinyin":"avxqwd（dgb|'anki'v1.0'xu'qiu'wen'dang'（'ding'gao'ban","parentId":0,"passwordProtected":false,"shareCount":0,"shareMode":"readonly","teamId":null,"userId":20608376,"deletedBy":null,"updatedAt":"2020-08-15T03:21:43.000Z","updatedBy":20608376,"createdAt":"2020-08-08T05:31:52.000Z","id":211322935,"guid":"9avKycHKHm8ZSON9","name":"ANKI V1.0需求文档（定稿版）","name_pinyin":"avxqwd（dgb|'anki'v1.0'xu'qiu'wen'dang'（'ding'gao'ban","password_protected":false,"share_mode":"readonly","type":"newdoc","is_delete":0,"user_id":20608376,"deleted_by":null,"updated_by":20608376,"team_id":null,"parent_id":0,"created_at":"2020-08-08T05:31:52.000Z","updated_at":"2020-08-15T03:21:43.000Z","isFromSVC":false,"isFolder":false,"collaboratorCount":1,"departmentCollaboratorCount":0,"isSpace":false,"isLocked":false,"parentRole":"inherited","isShortcut":false,"isLegacy":true,"hasChildren":false,"isFileAdmin":false,"isCloudFile":false,"user":{"id":20608376,"name":"岑朗","avatar":"https://assets.smcdn.cn/static/unmd5/default-avatar-moke.2.png","email":""},"updatedUser":{"id":20608376,"name":"岑朗","avatar":"https://assets.smcdn.cn/static/unmd5/default-avatar-moke.2.png","email":""},"lockedUser":{},"Permissions":[{"id":null,"owner":false}],"sortName":["ANKI V",1,".",0,"xū","qiú","wén","dàng","（","dìng","gǎo","bǎn","）"],"starred":false,"tags":[],"marked":false,"share_count":0,"views":20},
+            user: {},
+            watermarkStatus: false
+          }
+        </script>
+        <script>window.__INITIAL_STATE__={"users":{"mirror":{},"diff":{},"data":{},"persist":[]},"files":{"mirror":{},"diff":{},"data":{"9avKycHKHm8ZSON9":{"id":211322935,"guid":"9avKycHKHm8ZSON9","name":"ANKI V1.0需求文档（定稿版）","type":"newdoc","user":{"id":20608376,"name":"岑朗","avatar":"https://assets.smcdn.cn/static/unmd5/default-avatar-moke.2.png","email":""},"updatedUser":{"id":20608376,"name":"岑朗","avatar":"https://assets.smcdn.cn/static/unmd5/default-avatar-moke.2.png","email":""},"teamId":null,"parentId":0,"shareMode":"readonly","createdAt":"2020-08-08T05:31:52.000Z","updatedAt":"2020-08-15T03:21:43.000Z","passwordProtected":false,"sortName":["ANKI V",1,".",0,"xū","qiú","wén","dàng","（","dìng","gǎo","bǎn","）"],"isSpace":false,"isFromSVC":false,"isNew":false,"starred":false,"watched":false,"mute":false,"requirePassword":false,"collaboratorCount":1,"views":20,"marked":false,"hasDesktopShortcut":false,"permissions":{"readable":true,"editable":false,"commentable":false,"manageable":false,"exitable":false,"collaboratorManageable":false,"outsiderAddable":false,"childFileCreatable":false,"shareModeManageable":false,"moveable":true},"contentUrl":"","creator":{}}},"persist":["9avKycHKHm8ZSON9"]},"tree":{"mirror":{},"data":{}},"me":{"id":0,"stale":false},"recent":null,"starred":null,"deleted":null,"status":{"online":true,"physicalOnline":true,"pendingRequests":0,"dataLoaded":true,"pushClientId":"70944fa6-d857-4e69-bb03-064292cdcb26"},"notifications":{"all":null,"unread":null,"allHasMore":true,"unreadHasMore":true,"unpeekedCount":0,"unreadCount":0},"collaborators":{"mirror":{},"data":{}},"teams":{"mirror":{},"diff":{},"data":{},"persist":[]},"teamMembers":null,"recentContacts":null,"updated":{"list":[]},"shared":{"list":[]},"unreadShared":null,"created":{"list":[]},"used":{"list":[]},"shortcuts":[],"userGuide":{},"wechat":{},"maintenance":{},"flashMessages":{},"alphaFeatures":{},"subscriptions":{"app_push_comment":true,"app_push_invitation":true,"app_push_team":true,"app_push_mention":true,"not_send_apn_when_web_online":true,"comment":true,"app_push_system":true,"desktop":true},"syncedFiles":{},"discussions":{},"templates":{},"settings":{},"blueTips":{},"bulletin":{},"spaces":{"size":null},"page":{"guid":"9avKycHKHm8ZSON9"},"ui":{"templateModal":{"visible":false}}}</script>
+<script async="" src="./ANKI V1.0需求文档（定稿版）_files/component-c6ab2a48c0.js.下载"></script>
+<script async="" src="./ANKI V1.0需求文档（定稿版）_files/doc-a30ee05c48.js.下载"></script>
+    
+
+<div class="ql-bookmarker-container"><button type="button" class="ql-bookmarker"></button></div></body></html>
