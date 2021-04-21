@@ -1,0 +1,362 @@
+{
+	"info": {
+		"_postman_id": "67002c04-d6c0-4987-92c2-31f4e2f4fffb",
+		"name": "Anki",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "发送短信验证码",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"phone\": \"15089940544\" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{version}}/verification-codes",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{version}}",
+						"verification-codes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "用户登录接口",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"key\":\" verification_code_SqWFHNpN24IhI0D3\",\n    \"code\":\" 95b3u4\",\n    \"phone\": 15089940544\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{version}}/authorizations",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{version}}",
+						"authorizations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "用户刷新凭证",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYW5raWNoaW5hcy5hcHBcL3YxXC9hdXRob3JpemF0aW9ucyIsImlhdCI6MTU5NzUwOTA3MywiZXhwIjoxNTk3NTEyNjczLCJuYmYiOjE1OTc1MDkwNzMsImp0aSI6IklYdXdKbUsxcFV4Z1dUVUYiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.60j__tlY2sPaFcFhnFpBV9_fUzMMzJ2saDEOKMMWqkM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"key\": \"verification_code_I0kZuEUr6DW7K0Ss\",\n    \"code\": \"r3224p\",\n    \"phone\": 15089940544\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{version}}/authorizations/current",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{version}}",
+						"authorizations",
+						"current"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "用户删除凭证",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYW5raWNoaW5hcy5hcHBcL3YxXC9hdXRob3JpemF0aW9ucyIsImlhdCI6MTU5NzUwOTA3MywiZXhwIjoxNTk3NTEyNjczLCJuYmYiOjE1OTc1MDkwNzMsImp0aSI6IklYdXdKbUsxcFV4Z1dUVUYiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.60j__tlY2sPaFcFhnFpBV9_fUzMMzJ2saDEOKMMWqkM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{version}}/authorizations/current",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{version}}",
+						"authorizations",
+						"current"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取导航按钮配置接口",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{version}}/configs/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{version}}",
+						"configs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取 Win 客户端版本更新接口",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{version}}/configs/2",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{version}}",
+						"configs",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取 Mac 客户端版本更新接口",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{version}}/configs/3",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{version}}",
+						"configs",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取云空间套餐价格接口",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{version}}/configs/4",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{version}}",
+						"configs",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取支付宝二维码信息接口",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{version}}/configs/4",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{version}}",
+						"configs",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "轮询订单支付接口",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYW5raWNoaW5hcy5hcHBcL2FwaVwvdjFcL2F1dGhvcml6YXRpb25zIiwiaWF0IjoxNTk4MzY3OTM2LCJleHAiOjE2MDA5NTk5MzYsIm5iZiI6MTU5ODM2NzkzNiwianRpIjoiY241bHNDUktveEFXTzRWbSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.m243KoSgOjBcT211_hYs-PfbXuRDPAxQl2gcce6NOtc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{version}}/alipay/check/5",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{version}}",
+						"alipay",
+						"check",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "查询用户云空间套餐",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{version}}/clouds/current",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{version}}",
+						"clouds",
+						"current"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "用户刷新已使用的空间",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"used_size\": \"5368709120\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{version}}/users/current",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{version}}",
+						"users",
+						"current"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
